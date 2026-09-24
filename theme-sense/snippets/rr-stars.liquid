@@ -1,0 +1,7 @@
+{%- comment -%} Étoiles de notation. Paramètres : rating (1 à 5), size ('sm') {%- endcomment -%}
+{%- assign rr_rating = rating | default: 5 | round -%}
+<span class="rr-stars{% if size == 'sm' %} rr-stars--sm{% endif %}" role="img" aria-label="{{ rating | default: 5 }} sur 5">
+  {%- for i in (1..5) -%}
+    <svg viewBox="0 0 24 24" aria-hidden="true"{% if i > rr_rating %} style="opacity:.25"{% endif %}><path fill="currentColor" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+  {%- endfor -%}
+</span>

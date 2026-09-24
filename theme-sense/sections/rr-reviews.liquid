@@ -1,0 +1,54 @@
+{{ 'reliefroll.css' | asset_url | stylesheet_tag }}
+{%- assign s = section.settings -%}
+<div id="avis" class="rr rr--{{ s.bg }}" style="--rr-pt: {{ s.pt }}px; --rr-pb: {{ s.pb }}px;">
+  <div class="rr-wrap">
+    <div class="rr-head">
+      {%- if s.eyebrow != blank -%}<p class="rr-eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      {%- if s.heading != blank -%}<h2 class="rr-h2">{{ s.heading }}</h2>{%- endif -%}
+      {%- if s.rating != blank -%}
+        <div class="rr-rating-summary">
+          <strong>{{ s.rating }}</strong>
+          <div>
+            {% render 'rr-stars', rating: 5 %}
+            {%- if s.count != blank -%}<div class="rr-muted">{{ s.count }}</div>{%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if s.disclaimer != blank -%}<p class="rr-muted" style="margin-top:14px;">{{ s.disclaimer }}</p>{%- endif -%}
+    </div>
+    <div class="rr-reviews" data-rr-reviews>
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <article class="rr-review{% if forloop.index > s.visible %} is-hidden{% endif %}" {{ block.shopify_attributes }}>
+          {%- if b.image != blank -%}{% render 'rr-media', image: b.image, ratio: '1 / 1', sizes: '(min-width: 990px) 33vw, 100vw' %}{%- endif -%}
+          {% render 'rr-stars', rating: b.rating, size: 'sm' %}
+          {%- if b.title != blank -%}<p class="rr-review__title">{{ b.title }}</p>{%- endif -%}
+          <p class="rr-review__text">« {{ b.text }} »</p>
+          <div class="rr-review__foot">
+            <span class="rr-review__name">{{ b.name }}</span>
+            {%- if b.badge != blank -%}<span class="rr-verified">{% render 'rr-icon', name: 'check-circle' %}{{ b.badge }}</span>{%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+    {%- if section.blocks.size > s.visible -%}
+      <div class="rr-reviews__more">
+        <button type="button" class="rr-btn rr-btn--ghost" data-rr-more>{{ s.more_label }}</button>
+      </div>
+      <script>
+        (function () {
+          var root = document.currentScript.parentElement;
+          var btn = root.querySelector('[data-rr-more]');
+          if (!btn) return;
+          btn.addEventListener('click', function () {
+            root.querySelectorAll('.rr-review.is-hidden').forEach(function (el) { el.classList.remove('is-hidden'); });
+            btn.parentElement.remove();
+          });
+        })();
+      </script>
+    {%- endif -%}
+  </div>
+</div>
+{% schema %}
+{"name":"RR · Avis clients","tag":"section","class":"rr-section","settings":[{"type":"text","id":"eyebrow","label":"Petit titre (au-dessus)","default":"Avis clients"},{"type":"text","id":"heading","label":"Titre","default":"Ils l'utilisent au quotidien"},{"type":"text","id":"rating","label":"Note moyenne (vide = masquée)","info":"N'affichez qu'une note réelle et vérifiable."},{"type":"text","id":"count","label":"Texte sous la note (ex. nombre d'avis)"},{"type":"text","id":"disclaimer","label":"Mention sur l'origine des avis"},{"type":"range","id":"visible","label":"Avis visibles avant « Voir plus »","min":2,"max":12,"step":1,"default":6},{"type":"text","id":"more_label","label":"Texte du bouton « Voir plus »","default":"Voir plus d'avis"},{"type":"header","content":"Style de la section"},{"type":"select","id":"bg","label":"Couleur de fond","options":[{"value":"white","label":"Blanc"},{"value":"sand","label":"Sable"},{"value":"mint","label":"Menthe"},{"value":"ink","label":"Nuit (foncé)"}],"default":"white"},{"type":"range","id":"pt","label":"Marge haute","min":0,"max":140,"step":4,"unit":"px","default":72},{"type":"range","id":"pb","label":"Marge basse","min":0,"max":140,"step":4,"unit":"px","default":72}],"blocks":[{"type":"review","name":"Avis","settings":[{"type":"text","id":"name","label":"Nom","default":"Client"},{"type":"range","id":"rating","label":"Note","min":1,"max":5,"step":1,"default":5},{"type":"text","id":"title","label":"Titre (optionnel)"},{"type":"textarea","id":"text","label":"Avis","default":"Collez ici un vrai avis client."},{"type":"text","id":"badge","label":"Badge","default":"Achat vérifié"},{"type":"image_picker","id":"image","label":"Photo client (optionnel)"}]}],"presets":[{"name":"RR · Avis clients","blocks":[{"type":"review"},{"type":"review"},{"type":"review"}]}]}
+{% endschema %}

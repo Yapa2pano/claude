@@ -1,0 +1,17 @@
+{{ 'reliefroll.css' | asset_url | stylesheet_tag }}
+<div class="rr rr-marquee rr--{{ section.settings.bg }}" style="--rr-speed: {{ section.settings.speed }}s;">
+  <div class="rr-marquee__track">
+    {%- for n in (1..2) -%}
+      <div class="rr-marquee__group"{% if n == 2 %} aria-hidden="true"{% endif %}>
+        {%- for i in (1..3) -%}
+          {%- for block in section.blocks -%}
+            <span class="rr-marquee__item" {% if n == 1 and i == 1 %}{{ block.shopify_attributes }}{% endif %}>{% render 'rr-icon', name: block.settings.icon %}{{ block.settings.text }}</span>
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+{"name":"RR · Bandeau défilant","tag":"section","class":"rr-section","settings":[{"type":"range","id":"speed","label":"Durée d'un tour (plus grand = plus lent)","min":10,"max":80,"step":2,"unit":"s","default":36},{"type":"select","id":"bg","label":"Couleur de fond","options":[{"value":"white","label":"Blanc"},{"value":"sand","label":"Sable"},{"value":"mint","label":"Menthe"},{"value":"ink","label":"Nuit (foncé)"}],"default":"ink"}],"blocks":[{"type":"item","name":"Élément","settings":[{"type":"text","id":"text","label":"Texte","default":"Livraison suivie"},{"type":"select","id":"icon","label":"Icône","options":[{"value":"check","label":"check"},{"value":"check-circle","label":"check-circle"},{"value":"truck","label":"truck"},{"value":"shield","label":"shield"},{"value":"refresh","label":"refresh"},{"value":"lock","label":"lock"},{"value":"clock","label":"clock"},{"value":"battery","label":"battery"},{"value":"bolt","label":"bolt"},{"value":"hand","label":"hand"},{"value":"moon","label":"moon"},{"value":"sun","label":"sun"},{"value":"heart","label":"heart"},{"value":"leaf","label":"leaf"},{"value":"usb","label":"usb"},{"value":"waves","label":"waves"},{"value":"target","label":"target"},{"value":"user","label":"user"},{"value":"bed","label":"bed"},{"value":"feather","label":"feather"},{"value":"gift","label":"gift"},{"value":"chat","label":"chat"},{"value":"box","label":"box"},{"value":"star","label":"star"},{"value":"x-circle","label":"x-circle"}],"default":"check"}]}],"presets":[{"name":"RR · Bandeau défilant","blocks":[{"type":"item"},{"type":"item"}]}]}
+{% endschema %}

@@ -1,0 +1,25 @@
+{{ 'reliefroll.css' | asset_url | stylesheet_tag }}
+{%- assign s = section.settings -%}
+<div id="faq" class="rr rr--{{ s.bg }}" style="--rr-pt: {{ s.pt }}px; --rr-pb: {{ s.pb }}px;">
+  <div class="rr-wrap rr-wrap--narrow">
+    <div class="rr-head">
+      {%- if s.eyebrow != blank -%}<p class="rr-eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      {%- if s.heading != blank -%}<h2 class="rr-h2">{{ s.heading }}</h2>{%- endif -%}
+      {%- if s.text != blank -%}<div class="rr-lead">{{ s.text }}</div>{%- endif -%}
+    </div>
+    <div class="rr-faq">
+      {%- for block in section.blocks -%}
+        <details {{ block.shopify_attributes }}{% if forloop.first and s.open_first %} open{% endif %}>
+          <summary>{{ block.settings.question }}</summary>
+          <div class="rr-faq__a">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+    {%- if s.contact_text != blank -%}
+      <p class="rr-faq__contact rr-muted">{{ s.contact_text }}{% if s.contact_link != blank %} <a href="{{ s.contact_link }}">{{ s.contact_link_label }}</a>{% endif %}</p>
+    {%- endif -%}
+  </div>
+</div>
+{% schema %}
+{"name":"RR · FAQ","tag":"section","class":"rr-section","settings":[{"type":"text","id":"eyebrow","label":"Petit titre (au-dessus)"},{"type":"text","id":"heading","label":"Titre","default":"Questions fréquentes"},{"type":"richtext","id":"text","label":"Sous-titre"},{"type":"checkbox","id":"open_first","label":"Ouvrir la première question","default":true},{"type":"text","id":"contact_text","label":"Phrase de contact"},{"type":"url","id":"contact_link","label":"Lien de contact"},{"type":"text","id":"contact_link_label","label":"Texte du lien","default":"Écrivez-nous"},{"type":"header","content":"Style de la section"},{"type":"select","id":"bg","label":"Couleur de fond","options":[{"value":"white","label":"Blanc"},{"value":"sand","label":"Sable"},{"value":"mint","label":"Menthe"},{"value":"ink","label":"Nuit (foncé)"}],"default":"white"},{"type":"range","id":"pt","label":"Marge haute","min":0,"max":140,"step":4,"unit":"px","default":72},{"type":"range","id":"pb","label":"Marge basse","min":0,"max":140,"step":4,"unit":"px","default":72}],"blocks":[{"type":"question","name":"Question","settings":[{"type":"text","id":"question","label":"Question","default":"Votre question ?"},{"type":"richtext","id":"answer","label":"Réponse","default":"<p>Votre réponse.</p>"}]}],"presets":[{"name":"RR · FAQ","blocks":[{"type":"question"},{"type":"question"}]}]}
+{% endschema %}

@@ -1,0 +1,28 @@
+{{ 'reliefroll.css' | asset_url | stylesheet_tag }}
+{%- assign s = section.settings -%}
+<div class="rr rr--{{ s.bg }}" style="--rr-pt: {{ s.pt }}px; --rr-pb: {{ s.pb }}px;">
+  <div class="rr-wrap">
+    <div class="rr-head">
+      {%- if s.eyebrow != blank -%}<p class="rr-eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      {%- if s.heading != blank -%}<h2 class="rr-h2">{{ s.heading }}</h2>{%- endif -%}
+      {%- if s.text != blank -%}<div class="rr-lead">{{ s.text }}</div>{%- endif -%}
+    </div>
+    <div class="rr-steps">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <div class="rr-step" {{ block.shopify_attributes }}>
+          {%- if s.show_images -%}
+            {% render 'rr-media', image: b.image, fallback: b.fallback, label: b.image_label, ratio: '4 / 3', sizes: '(min-width: 900px) 33vw, 100vw', product: product %}
+          {%- endif -%}
+          <span class="rr-step__num">{{ forloop.index }}</span>
+          <h3 class="rr-h3">{{ b.title }}</h3>
+          <p>{{ b.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if s.footer != blank -%}<p class="rr-steps__foot">{{ s.footer }}</p>{%- endif -%}
+  </div>
+</div>
+{% schema %}
+{"name":"RR · Étapes","tag":"section","class":"rr-section","settings":[{"type":"text","id":"eyebrow","label":"Petit titre (au-dessus)"},{"type":"text","id":"heading","label":"Titre","default":"Comment ça marche"},{"type":"richtext","id":"text","label":"Sous-titre"},{"type":"checkbox","id":"show_images","label":"Afficher les images","default":true},{"type":"text","id":"footer","label":"Phrase sous les étapes"},{"type":"header","content":"Style de la section"},{"type":"select","id":"bg","label":"Couleur de fond","options":[{"value":"white","label":"Blanc"},{"value":"sand","label":"Sable"},{"value":"mint","label":"Menthe"},{"value":"ink","label":"Nuit (foncé)"}],"default":"white"},{"type":"range","id":"pt","label":"Marge haute","min":0,"max":140,"step":4,"unit":"px","default":72},{"type":"range","id":"pb","label":"Marge basse","min":0,"max":140,"step":4,"unit":"px","default":72}],"blocks":[{"type":"step","name":"Étape","limit":6,"settings":[{"type":"text","id":"title","label":"Titre","default":"Étape"},{"type":"textarea","id":"text","label":"Texte","default":"Décrivez l'étape."},{"type":"image_picker","id":"image","label":"Image"},{"type":"range","id":"fallback","label":"Sinon, utiliser la photo produit n°","min":0,"max":10,"step":1,"default":0},{"type":"text","id":"image_label","label":"Repère de l'image","default":"Image à générer"}]}],"presets":[{"name":"RR · Étapes","blocks":[{"type":"step"},{"type":"step"},{"type":"step"}]}]}
+{% endschema %}

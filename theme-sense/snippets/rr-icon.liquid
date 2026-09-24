@@ -1,0 +1,37 @@
+{%- comment -%}
+  Icônes SVG de la landing ReliefRoll.
+  Utilisation : {% render 'rr-icon', name: 'check' %}
+{%- endcomment -%}
+<svg class="rr-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+{%- case name -%}
+  {%- when 'check' -%}<path d="M20 6 9 17l-5-5"/>
+  {%- when 'check-circle' -%}<circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>
+  {%- when 'x' -%}<path d="M18 6 6 18M6 6l12 12"/>
+  {%- when 'x-circle' -%}<circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/>
+  {%- when 'minus' -%}<path d="M5 12h14"/>
+  {%- when 'truck' -%}<path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+  {%- when 'shield' -%}<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
+  {%- when 'refresh' -%}<path d="M3 12a9 9 0 0 1 15.5-6.3L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.3L3 16"/><path d="M3 21v-5h5"/>
+  {%- when 'lock' -%}<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  {%- when 'clock' -%}<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+  {%- when 'battery' -%}<rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2M6 11v2M10 11v2"/>
+  {%- when 'bolt' -%}<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+  {%- when 'hand' -%}<path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-6-2.4l-3.6-3.6a2 2 0 0 1 2.8-2.8L7 15"/>
+  {%- when 'moon' -%}<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+  {%- when 'sun' -%}<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+  {%- when 'heart' -%}<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/>
+  {%- when 'leaf' -%}<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/>
+  {%- when 'usb' -%}<rect x="6" y="2" width="12" height="8" rx="1"/><path d="M9 6h.01M15 6h.01M8 10v5a4 4 0 0 0 8 0v-5M12 19v3"/>
+  {%- when 'waves' -%}<path d="M2 6c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+  {%- when 'target' -%}<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+  {%- when 'user' -%}<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>
+  {%- when 'bed' -%}<path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8M2 16h20M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/>
+  {%- when 'feather' -%}<path d="M20.2 12.2a6 6 0 0 0-8.5-8.5L5 10.5V19h8.5z"/><path d="M16 8 2 22M17.5 15H9"/>
+  {%- when 'gift' -%}<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/>
+  {%- when 'chat' -%}<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  {%- when 'box' -%}<path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/>
+  {%- when 'arrow' -%}<path d="M5 12h14M13 6l6 6-6 6"/>
+  {%- when 'star' -%}<path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/>
+  {%- else -%}<circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>
+{%- endcase -%}
+</svg>

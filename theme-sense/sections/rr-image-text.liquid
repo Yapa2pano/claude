@@ -1,0 +1,40 @@
+{{ 'reliefroll.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign s = section.settings
+  assign pain = false
+  if s.list_style == 'pain'
+    assign pain = true
+  endif
+-%}
+<div class="rr rr--{{ s.bg }}" style="--rr-pt: {{ s.pt }}px; --rr-pb: {{ s.pb }}px;">
+  <div class="rr-wrap">
+    <div class="rr-split{% if s.image_right %} rr-split--reverse{% endif %}">
+      <div class="rr-split__media">
+        {% render 'rr-media', image: s.image, fallback: s.fallback, label: s.image_label, ratio: s.ratio, tag: s.image_tag, product: product %}
+      </div>
+      <div class="rr-split__text">
+        {%- if s.eyebrow != blank -%}<p class="rr-eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        {%- if s.heading != blank -%}<h2 class="rr-h2">{{ s.heading }}</h2>{%- endif -%}
+        {%- if s.text != blank -%}<div class="rr-lead">{{ s.text }}</div>{%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <ul class="rr-list{% if pain %} rr-list--pain{% endif %}">
+            {%- for block in section.blocks -%}
+              <li {{ block.shopify_attributes }}>
+                {% render 'rr-icon', name: block.settings.icon %}
+                <div>{% if block.settings.title != blank %}<strong>{{ block.settings.title }}</strong>{% endif %}{{ block.settings.text }}</div>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- if s.quote != blank -%}<p class="rr-quote">{{ s.quote }}</p>{%- endif -%}
+        {%- if s.text_after != blank -%}<div class="rr-lead">{{ s.text_after }}</div>{%- endif -%}
+        {%- if s.button_label != blank -%}
+          <a class="rr-btn" href="{{ s.button_link | default: '#MainContent' }}">{{ s.button_label }} {% render 'rr-icon', name: 'arrow' %}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{"name":"RR · Image + texte","tag":"section","class":"rr-section","settings":[{"type":"text","id":"eyebrow","label":"Petit titre (au-dessus)"},{"type":"text","id":"heading","label":"Titre (entourer un mot de <em></em> pour le colorer)","default":"Titre de la section"},{"type":"richtext","id":"text","label":"Texte"},{"type":"select","id":"list_style","label":"Style de la liste","options":[{"value":"benefit","label":"Bénéfices (icônes turquoise)"},{"value":"pain","label":"Problèmes (icônes rouges)"}],"default":"benefit"},{"type":"text","id":"quote","label":"Phrase mise en avant"},{"type":"richtext","id":"text_after","label":"Texte après la liste"},{"type":"text","id":"button_label","label":"Texte du bouton (vide = pas de bouton)"},{"type":"url","id":"button_link","label":"Lien du bouton (vide = remonte à l'achat)"},{"type":"header","content":"Image"},{"type":"image_picker","id":"image","label":"Image"},{"type":"range","id":"fallback","label":"Sinon, utiliser la photo produit n°","min":0,"max":10,"step":1,"default":1,"info":"0 = aucune (emplacement gris)"},{"type":"text","id":"image_label","label":"Repère de l'image (visible seulement si aucune image)","default":"Image à générer"},{"type":"text","id":"image_tag","label":"Pastille sur l'image (optionnel)"},{"type":"select","id":"ratio","label":"Format de l'image","options":[{"value":"1 / 1","label":"Carré"},{"value":"4 / 5","label":"Portrait"},{"value":"4 / 3","label":"Paysage"}],"default":"4 / 5"},{"type":"checkbox","id":"image_right","label":"Image à droite","default":false},{"type":"header","content":"Style de la section"},{"type":"select","id":"bg","label":"Couleur de fond","options":[{"value":"white","label":"Blanc"},{"value":"sand","label":"Sable"},{"value":"mint","label":"Menthe"},{"value":"ink","label":"Nuit (foncé)"}],"default":"white"},{"type":"range","id":"pt","label":"Marge haute","min":0,"max":140,"step":4,"unit":"px","default":72},{"type":"range","id":"pb","label":"Marge basse","min":0,"max":140,"step":4,"unit":"px","default":72}],"blocks":[{"type":"point","name":"Point de liste","settings":[{"type":"select","id":"icon","label":"Icône","options":[{"value":"check","label":"check"},{"value":"check-circle","label":"check-circle"},{"value":"truck","label":"truck"},{"value":"shield","label":"shield"},{"value":"refresh","label":"refresh"},{"value":"lock","label":"lock"},{"value":"clock","label":"clock"},{"value":"battery","label":"battery"},{"value":"bolt","label":"bolt"},{"value":"hand","label":"hand"},{"value":"moon","label":"moon"},{"value":"sun","label":"sun"},{"value":"heart","label":"heart"},{"value":"leaf","label":"leaf"},{"value":"usb","label":"usb"},{"value":"waves","label":"waves"},{"value":"target","label":"target"},{"value":"user","label":"user"},{"value":"bed","label":"bed"},{"value":"feather","label":"feather"},{"value":"gift","label":"gift"},{"value":"chat","label":"chat"},{"value":"box","label":"box"},{"value":"star","label":"star"},{"value":"x-circle","label":"x-circle"}],"default":"check-circle"},{"type":"text","id":"title","label":"Titre (optionnel)"},{"type":"text","id":"text","label":"Texte","default":"Un point important"}]}],"presets":[{"name":"RR · Image + texte","blocks":[{"type":"point"},{"type":"point"},{"type":"point"}]}]}
+{% endschema %}

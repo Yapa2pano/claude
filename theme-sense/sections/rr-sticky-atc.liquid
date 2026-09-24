@@ -1,0 +1,49 @@
+{%- comment -%}
+  Barre d'achat qui apparaît en bas de l'écran quand le bouton "Ajouter au panier"
+  principal n'est plus visible, et disparaît quand l'offre finale est à l'écran.
+{%- endcomment -%}
+{{ 'reliefroll.css' | asset_url | stylesheet_tag }}
+{%- if product != blank -%}
+  {%- assign v = product.selected_or_first_available_variant -%}
+  <div class="rr-sticky" data-rr-sticky aria-hidden="true">
+    <div class="rr-sticky__inner">
+      <div class="rr-sticky__img">
+        {%- if product.featured_media -%}{{ product.featured_media.preview_image | image_url: width: 120 | image_tag: loading: 'lazy', alt: '' }}{%- endif -%}
+      </div>
+      <div class="rr-sticky__info">
+        <div class="rr-sticky__title">{{ section.settings.title | default: product.title }}</div>
+        <div class="rr-sticky__price">
+          <strong>{{ v.price | money }}</strong>
+          {%- if v.compare_at_price > v.price -%}<s>{{ v.compare_at_price | money }}</s>{%- endif -%}
+        </div>
+      </div>
+      {%- form 'product', product -%}
+        <input type="hidden" name="id" value="{{ v.id }}">
+        <button type="submit" class="rr-btn" tabindex="-1"{% unless v.available %} disabled{% endunless %}>{{ section.settings.button_label }}</button>
+      {%- endform -%}
+    </div>
+  </div>
+  <script>
+    (function () {
+      var bar = document.querySelector('[data-rr-sticky]');
+      var mainBtn = document.querySelector('.product-form__submit');
+      if (!bar || !mainBtn || !('IntersectionObserver' in window)) return;
+      var btnAbove = false, offerVisible = false;
+      function update() {
+        var show = btnAbove && !offerVisible;
+        bar.classList.toggle('is-visible', show);
+        bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+        bar.querySelector('button').tabIndex = show ? 0 : -1;
+      }
+      new IntersectionObserver(function (e) {
+        btnAbove = !e[0].isIntersecting && e[0].boundingClientRect.top < 0;
+        update();
+      }).observe(mainBtn);
+      var offer = document.querySelector('[data-rr-offer]');
+      if (offer) new IntersectionObserver(function (e) { offerVisible = e[0].isIntersecting; update(); }).observe(offer);
+    })();
+  </script>
+{%- endif -%}
+{% schema %}
+{"name":"RR · Barre d'achat","tag":"section","settings":[{"type":"text","id":"title","label":"Nom affiché (vide = titre du produit)","default":"ReliefRoll™"},{"type":"text","id":"button_label","label":"Texte du bouton","default":"Commander"}],"presets":[{"name":"RR · Barre d'achat"}]}
+{% endschema %}

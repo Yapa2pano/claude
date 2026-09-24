@@ -1,0 +1,51 @@
+{{ 'reliefroll.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign s = section.settings
+  assign v = product.selected_or_first_available_variant
+  assign saving_pct = 0
+  if v.compare_at_price > v.price
+    assign saving = v.compare_at_price | minus: v.price
+    assign saving_pct = saving | times: 100 | divided_by: v.compare_at_price
+  endif
+-%}
+<div class="rr rr--{{ s.bg }}" data-rr-offer style="--rr-pt: {{ s.pt }}px; --rr-pb: {{ s.pb }}px;">
+  <div class="rr-wrap">
+    <div class="rr-offer">
+      <div>
+        {% render 'rr-media', image: s.image, fallback: s.fallback, label: s.image_label, ratio: '1 / 1', product: product %}
+      </div>
+      <div>
+        {%- if s.eyebrow != blank -%}<p class="rr-eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        <h2 class="rr-h2">{{ s.heading }}</h2>
+        {%- if s.text != blank -%}<div class="rr-lead">{{ s.text }}</div>{%- endif -%}
+        {%- if product != blank -%}
+          <div class="rr-offer__price">
+            <strong>{{ v.price | money }}</strong>
+            {%- if saving_pct > 0 -%}
+              <s>{{ v.compare_at_price | money }}</s>
+              <span class="rr-save">-{{ saving_pct }}%</span>
+            {%- endif -%}
+          </div>
+          {%- if s.urgency != blank -%}
+            <div class="rr-urgency"><span class="rr-dot"></span>{{ s.urgency }}</div>
+          {%- endif -%}
+          {%- form 'product', product, class: 'rr-offer__form' -%}
+            <input type="hidden" name="id" value="{{ v.id }}">
+            <button type="submit" class="rr-btn rr-btn--full"{% unless v.available %} disabled{% endunless %}>
+              {%- if v.available -%}{{ s.button_label }}{%- else -%}Épuisé{%- endif -%}
+              {% render 'rr-icon', name: 'arrow' %}
+            </button>
+          {%- endform -%}
+        {%- endif -%}
+        <div class="rr-btn-note">
+          {%- if s.note_1 != blank -%}<span>{% render 'rr-icon', name: 'shield' %}{{ s.note_1 }}</span>{%- endif -%}
+          {%- if s.note_2 != blank -%}<span>{% render 'rr-icon', name: 'truck' %}{{ s.note_2 }}</span>{%- endif -%}
+          {%- if s.note_3 != blank -%}<span>{% render 'rr-icon', name: 'lock' %}{{ s.note_3 }}</span>{%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{"name":"RR · Offre finale","tag":"section","class":"rr-section","settings":[{"type":"text","id":"eyebrow","label":"Petit titre (au-dessus)"},{"type":"text","id":"heading","label":"Titre","default":"Prêt à essayer ?"},{"type":"richtext","id":"text","label":"Texte"},{"type":"text","id":"urgency","label":"Message sous le prix (vide = masqué)"},{"type":"text","id":"button_label","label":"Texte du bouton","default":"Ajouter au panier"},{"type":"text","id":"note_1","label":"Réassurance 1","default":"Garantie 30 jours"},{"type":"text","id":"note_2","label":"Réassurance 2","default":"Livraison suivie"},{"type":"text","id":"note_3","label":"Réassurance 3","default":"Paiement sécurisé"},{"type":"header","content":"Image"},{"type":"image_picker","id":"image","label":"Image"},{"type":"range","id":"fallback","label":"Sinon, utiliser la photo produit n°","min":0,"max":10,"step":1,"default":1},{"type":"text","id":"image_label","label":"Repère de l'image","default":"Image à générer"},{"type":"header","content":"Style de la section"},{"type":"select","id":"bg","label":"Couleur de fond","options":[{"value":"white","label":"Blanc"},{"value":"sand","label":"Sable"},{"value":"mint","label":"Menthe"},{"value":"ink","label":"Nuit (foncé)"}],"default":"white"},{"type":"range","id":"pt","label":"Marge haute","min":0,"max":140,"step":4,"unit":"px","default":72},{"type":"range","id":"pb","label":"Marge basse","min":0,"max":140,"step":4,"unit":"px","default":72}],"presets":[{"name":"RR · Offre finale"}]}
+{% endschema %}

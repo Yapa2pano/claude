@@ -1,0 +1,30 @@
+{%- comment -%}
+  Affiche une image choisie dans l'éditeur.
+  Si aucune image n'est choisie : utilise la photo n° "fallback" du produit (1 = 1re photo).
+  Si toujours rien : affiche un emplacement gris avec l'étiquette "label"
+  (ex. "B3 – image à générer") pour savoir quelle image mettre où.
+
+  Paramètres : image, fallback (nombre), label, ratio (ex. '4 / 5'), sizes, tag, eager
+{%- endcomment -%}
+{%- liquid
+  assign rr_img = image
+  if rr_img == blank and fallback > 0 and product != blank
+    assign rr_index = fallback | minus: 1
+    assign rr_img = product.media[rr_index].preview_image
+  endif
+  assign rr_sizes = sizes | default: '(min-width: 990px) 50vw, 100vw'
+  assign rr_alt = rr_img.alt | default: label | escape
+  assign rr_loading = 'lazy'
+  if eager
+    assign rr_loading = 'eager'
+  endif
+-%}
+<div class="rr-media" style="--rr-ratio: {{ ratio | default: '1 / 1' }};">
+  {%- if rr_img != blank -%}
+    {{ rr_img | image_url: width: 1600 | image_tag: loading: rr_loading, widths: '375, 550, 750, 1000, 1300, 1600', sizes: rr_sizes, alt: rr_alt }}
+  {%- else -%}
+    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- if label != blank -%}<span class="rr-media__label">📷 {{ label }}</span>{%- endif -%}
+  {%- endif -%}
+  {%- if tag != blank -%}<span class="rr-media__tag">{{ tag }}</span>{%- endif -%}
+</div>
