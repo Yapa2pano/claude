@@ -34,6 +34,13 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 5. **Images** : chaque emplacement a un repère (A1, A2, B1…B6, C1…C3, D1, E1, F1) et, en attendant,
    une photo produit par défaut (réglage `fallback`). Ensuite, fournir un prompt ChatGPT par repère,
    en précisant si la photo du produit doit être jointe et le format (portrait / carré / paysage).
+   **Règle d'or des images (validée par l'utilisateur)** : chaque image doit être au moins l'une de ces 3 choses,
+   idéalement plusieurs : **éducative** (montre comment ça marche / l'invisible, ex. muscle sous la peau),
+   **relatable** (scène où le client se reconnaît, ex. enfiler ses chaussures en retenant son souffle),
+   **très émotionnelle** (ex. grand-mère qui accueille sa petite-fille en courant dans le jardin = référence E1).
+   Interdit : images décoratives (produit sur une table, dans un tiroir, réveil seul) et **packshot / boîte
+   près des boutons d'achat** — ça casse l'émotion. Les packshots vont uniquement dans la galerie produit.
+   L'image de l'offre finale doit **boucler l'histoire** en reprenant la scène du problème (A1), résolue.
 6. **Vérifier avant de livrer** : retélécharger les fichiers envoyés et les comparer au local,
    lancer Theme Check (`@shopify/theme-check-node`) sur les fichiers `rr-*`.
 7. **Mise en ligne** : l'utilisateur publie la copie, PUIS on assigne le template au produit (`templateSuffix`).
