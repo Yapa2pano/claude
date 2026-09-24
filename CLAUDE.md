@@ -11,12 +11,15 @@ puis commit + push. Ne jamais attendre qu'il le redemande.
 
 ## Contexte boutique
 - **Langue** :
-  - Textes de la page (template, sections) : **en français** pour que l'utilisateur valide ; traduction
-    (allemand) seulement quand il le demande, à partir des versions FR validées.
-  - **Images avec du texte : prompts directement avec le texte EN ALLEMAND** (le marché final est
-    germanophone). Instructions du prompt en français, texte à afficher en allemand entre « », et une
-    traduction française à côté (hors du bloc à copier) pour qu'il valide le sens. Proposer de relire
-    l'orthographe allemande des images générées (umlauts, fautes de l'IA).
+  - Textes de la page (template, sections) : **toujours en français** pour que l'utilisateur valide ;
+    traduction dans la langue du marché seulement quand il le demande, à partir des versions FR validées.
+  - **La langue cible dépend du marché choisi pour chaque produit** (pas toujours l'allemand).
+    Au début de chaque nouveau produit, s'il ne l'a pas dit : lui demander le marché de lancement.
+    ReliefRoll → marché germanophone (allemand).
+  - **Images avec du texte : prompts directement avec le texte dans la langue du marché**. Instructions du
+    prompt en français, texte à afficher dans la langue cible entre « », et une traduction française à côté
+    (hors du bloc à copier) pour qu'il valide le sens. Proposer de relire l'orthographe des images générées
+    (accents, umlauts, fautes de l'IA).
   - Ne pas signaler une langue étrangère comme un problème dans ses visuels.
 - Thème en ligne : **Sense** (couleurs : turquoise `#1BC7C2`, noir ; police Avenir Next). Marché FR, prix en €.
 - Connecteur Shopify : pas d'écriture sur le thème en ligne (MAIN) et pas de publication de thème → toujours
