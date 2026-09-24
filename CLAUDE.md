@@ -9,6 +9,26 @@ chaque nouvelle page produit doit atteindre ce niveau et suivre ce process.
 **mettre à jour ce fichier dans la même réponse** (section adaptée ou « Journal des apprentissages »),
 puis commit + push. Ne jamais attendre qu'il le redemande.
 
+## ⚠️ Méthode de travail obligatoire, sur TOUT
+(hooks, CRO, créas, pubs, landing page, bullet points, titres, images, e-mails…)
+1. **Produire** à partir du contexte : cible, produit, marché, matière existante.
+2. **Relire et noter sur 10** à quel point ça remplit son rôle par rapport à l'objectif, avec une
+   justification. L'IA juge mieux de la matière existante qu'elle ne crée du premier coup : toujours
+   faire ce 2e passage critique.
+3. **Se demander ce qu'il faudrait pour 10/10, voire 11/10** (« il voit ça, il achète direct »), et corriger.
+4. **Coût d'opportunité** : ne pas seulement chercher les erreurs, chercher **ce qu'on n'a PAS fait**.
+   Chaque unité d'attention du prospect est précieuse : est-ce qu'il y avait mieux à mettre à cet endroit
+   (déclencheur plus intense, ou d'une dimension différente) ? Une unité d'attention qui ne déclenche
+   rien est une perte (ex. photos du produit seul en main, sur la table, dans le tiroir).
+5. **Équation d'efficacité : Intensité du déclencheur³ × Nombre de déclencheurs.** Chaque élément
+   (bullet, image, section) doit être puissant ET toucher une dimension différente : douleur reconnue,
+   désir / émotion, identité / autonomie, simplicité, argent / logique, peur / risque, temps, preuve…
+   Ainsi chaque sous-profil de la même cible trouve SA raison d'acheter.
+6. **Densifier, varier** : du nouveau à chaque unité d'attention. Répéter un point important est permis,
+   mais la répétition ne doit pas se sentir (autre angle, autre forme, autre scène).
+7. **Connaître la cible mieux que les concurrents** : ses mots, ses moments, ses peurs, ses désirs.
+8. Montrer à l'utilisateur la note avant / après et, en une ligne, pourquoi c'est un 10.
+
 ## Contexte boutique
 - **Langue** :
   - Textes de la page (template, sections) : **toujours en français** pour que l'utilisateur valide ;
