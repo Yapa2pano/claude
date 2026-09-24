@@ -221,8 +221,8 @@
     "quote": "Faire avec, ce n'est pas la même chose qu'accepter.",
     "text_after": "<p>Crème chauffante, coussin électrique, foam roller… Ce n'est pas un manque d'efforts de votre part. Ce sont des solutions qui n'ont jamais été pensées pour <strong>votre moment précis</strong> : les 10 premières minutes après le réveil, au bord du lit.</p>",
     "button_label": "",
-    "image_label": "A1 – Personne assise au bord du lit, main sur le bas du dos",
     "fallback": 2,
+    "image_label": "A1 – Personne assise au bord du lit, main sur le bas du dos",
     "ratio": "4 / 5",
     "image_right": false,
     "bg": "sand",
@@ -271,9 +271,9 @@
     "quote": "",
     "text_after": "",
     "button_label": "Je veux des matins sans raideur",
+    "fallback": 1,
     "image_label": "A2 – ReliefRoll en main, fond clair, lumière du matin",
     "image_tag": "Nouveau",
-    "fallback": 1,
     "ratio": "1 / 1",
     "image_right": true,
     "bg": "white",
@@ -414,8 +414,6 @@
   },
   "rr_moment": {
    "type": "rr-image-text",
-   "blocks": {},
-   "block_order": [],
    "settings": {
     "eyebrow": "Le bon geste au bon moment",
     "heading": "Votre bas du dos se bloque dans votre lit. <em>Pas chez le kiné.</em>",
@@ -424,8 +422,8 @@
     "quote": "ReliefRoll™ ne remplace pas le kiné. C'est le geste quotidien que le kiné ne peut pas être.",
     "text_after": "",
     "button_label": "Commencer demain matin",
-    "image_label": "D1 – Réveil à 7 h, lumière douce, ReliefRoll sur la table de nuit",
     "fallback": 8,
+    "image_label": "D1 – Réveil à 7 h, lumière douce, ReliefRoll sur la table de nuit",
     "ratio": "4 / 5",
     "image_right": false,
     "bg": "ink",
@@ -560,8 +558,8 @@
     "quote": "",
     "text_after": "<p>Et vous n'avez besoin de demander à personne. C'est dans votre table de nuit. <strong>Vous décidez.</strong></p>",
     "button_label": "Je retrouve mes matins",
-    "image_label": "E1 – Senior souriant qui jardine ou porte un petit-enfant",
     "fallback": 6,
+    "image_label": "E1 – Senior souriant qui jardine ou porte un petit-enfant",
     "ratio": "4 / 5",
     "image_right": true,
     "bg": "white",
@@ -677,8 +675,13 @@
     "heading": "Essayez-le chaque matin pendant 30 jours",
     "text": "<p>Utilisez ReliefRoll™ comme vous le souhaitez pendant 30 jours. Si vous ne sentez aucune différence, écrivez-nous : <strong>nous vous remboursons, sans justification à fournir.</strong> Le seul risque, c'est de continuer à commencer vos journées courbé.</p>",
     "bg": "white",
-    "pt": 72,
-    "pb": 72
+    "pt": 88,
+    "pb": 88,
+    "quote": "Très confortable et pratique à utiliser. La batterie tient bien — je l'ai utilisé sur 4 patients et elle est toujours au vert. Je le recommande.",
+    "quote_author": "H***e",
+    "quote_source": "Achat vérifié",
+    "fallback": 1,
+    "image_label": "G1 – Femme sereine et souriante avec son ReliefRoll"
    }
   },
   "rr_faq": {
@@ -783,8 +786,8 @@
     "note_1": "Garantie 30 jours",
     "note_2": "Livraison suivie 5–8 jours",
     "note_3": "Paiement sécurisé",
-    "image_label": "F1 – Packshot ReliefRoll + boîte, fond neutre",
     "fallback": 1,
+    "image_label": "F1 – Packshot ReliefRoll + boîte, fond neutre",
     "bg": "ink",
     "pt": 96,
     "pb": 96
@@ -809,8 +812,8 @@
   "rr_comparison",
   "rr_transformation",
   "rr_reviews",
-  "rr_guarantee",
   "rr_faq",
+  "rr_guarantee",
   "rr_offer",
   "rr_sticky"
  ]
