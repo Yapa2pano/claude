@@ -272,9 +272,9 @@
     "text_after": "",
     "button_label": "Je veux des matins sans raideur",
     "fallback": 1,
-    "image_label": "A2 – ReliefRoll en main, fond clair, lumière du matin",
+    "image_label": "A2 – Au bord du lit, ReliefRoll dans le dos, soulagée",
     "image_tag": "Nouveau",
-    "ratio": "1 / 1",
+    "ratio": "4 / 3",
     "image_right": true,
     "bg": "white",
     "pt": 88,
@@ -311,7 +311,7 @@
       "title": "3 niveaux d'intensité",
       "text": "<p>Doux le matin, plus soutenu après une journée debout. Vous choisissez, d'un simple bouton.</p>",
       "fallback": 4,
-      "image_label": "B3 – Doigt qui appuie sur le bouton, 3 voyants"
+      "image_label": "B3 – Elle appuie sur le bouton en souriant"
      }
     },
     "bn_4": {
@@ -321,7 +321,7 @@
       "title": "Au bord du lit",
       "text": "<p>Pas besoin de vous allonger au sol ni de vous contorsionner. Assis, 10 minutes, et vous vous levez plus souple.</p>",
       "fallback": 5,
-      "image_label": "B4 – Utilisation assis au bord du lit, chambre lumineuse"
+      "image_label": "B4 – Foam roller au sol vs ReliefRoll au bord du lit"
      }
     },
     "bn_5": {
@@ -331,17 +331,17 @@
       "title": "Sans fil, rechargeable",
       "text": "<p>Batterie rechargeable par USB-C : aucun câble qui gêne pendant l'utilisation.</p>",
       "fallback": 6,
-      "image_label": "B5 – ReliefRoll en charge sur une table de nuit"
+      "image_label": "B5 – Sur l'épaule du mari, devant le film du soir"
      }
     },
     "bn_6": {
      "type": "benefit",
      "settings": {
       "icon": "feather",
-      "title": "Compact et discret",
-      "text": "<p>Il tient dans une main et se range dans la table de nuit. Toujours là quand vous en avez besoin.</p>",
+      "title": "Compact, il vous suit partout",
+      "text": "<p>Il tient dans une main et se glisse dans une valise. Chez vos enfants, en vacances : votre rituel du matin vient avec vous.</p>",
       "fallback": 7,
-      "image_label": "B6 – ReliefRoll dans un tiroir de table de nuit"
+      "image_label": "B6 – Glissé dans la valise pour aller voir les petits-enfants"
      }
     }
    },
@@ -423,7 +423,7 @@
     "text_after": "",
     "button_label": "Commencer demain matin",
     "fallback": 8,
-    "image_label": "D1 – Réveil à 7 h, lumière douce, ReliefRoll sur la table de nuit",
+    "image_label": "D1 – Seule à l'aube, 7 h, elle l'utilise sereinement",
     "ratio": "4 / 5",
     "image_right": false,
     "bg": "ink",
@@ -681,7 +681,7 @@
     "quote_author": "H***e",
     "quote_source": "Achat vérifié",
     "fallback": 1,
-    "image_label": "G1 – Femme sereine et souriante avec son ReliefRoll"
+    "image_label": "G1 – Dans son fauteuil, ReliefRoll en main, sourire confiant"
    }
   },
   "rr_faq": {
@@ -787,7 +787,7 @@
     "note_2": "Livraison suivie 5–8 jours",
     "note_3": "Paiement sécurisé",
     "fallback": 1,
-    "image_label": "F1 – Packshot ReliefRoll + boîte, fond neutre",
+    "image_label": "F1 – Elle s'étire au bord du lit, libérée",
     "bg": "ink",
     "pt": 96,
     "pb": 96
