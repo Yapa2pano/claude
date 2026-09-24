@@ -57,6 +57,15 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
    Interdit : images décoratives (produit sur une table, dans un tiroir, réveil seul) et **packshot / boîte
    près des boutons d'achat** — ça casse l'émotion. Les packshots vont uniquement dans la galerie produit.
    L'image de l'offre finale doit **boucler l'histoire** en reprenant la scène du problème (A1), résolue.
+   **Boucle obligatoire avant de livrer un prompt d'image (demandée par l'utilisateur)** :
+   a) Quel output rapproche le plus le prospect de l'état d'achat, en valeur absolue ? Soit il enlève le plus
+      de « − » (éducation, objection levée, peur, doute), soit il ajoute le plus de « + » (émotion, désir,
+      besoin, projection), idéalement les deux.
+   b) Noter mon idée sur 10, honnêtement.
+   c) Me demander ce qu'il faudrait pour 10/10, voire 11/10 (« il voit ça, il achète direct »), et réécrire
+      le prompt jusqu'à y arriver.
+   d) Montrer à l'utilisateur la note finale et en une ligne pourquoi c'est un 10 (ce que ça déclenche).
+   Même logique pour les textes : titre, paragraphe, bouton.
    **Carrousel du bloc d'achat (galerie produit) = mini page de vente** : tout ce qu'il faut pour acheter
    doit être dans la hero section. Chaque image répond à la question du prospect à ce moment-là :
    1) « C'est pour moi ? pourquoi maintenant ? » → problème dans les mots du client + produit + vraie raison
