@@ -5,6 +5,9 @@ La page ReliefRoll (`theme-sense/`) est la référence validée par l'utilisateu
 chaque nouvelle page produit doit atteindre ce niveau et suivre ce process.
 
 ## Contexte boutique
+- **Langue : tout en français d'abord.** L'utilisateur valide tout, PUIS demande la traduction (ex. allemand).
+  Ne pas signaler une langue étrangère comme un problème s'il s'agit de visuels préparés pour plus tard ;
+  à la traduction, reprendre les versions FR validées (textes + prompts d'images) et les traduire.
 - Thème en ligne : **Sense** (couleurs : turquoise `#1BC7C2`, noir ; police Avenir Next). Marché FR, prix en €.
 - Connecteur Shopify : pas d'écriture sur le thème en ligne (MAIN) et pas de publication de thème → toujours
   travailler sur une **copie** (`themeDuplicate`), puis l'utilisateur publie lui-même.
