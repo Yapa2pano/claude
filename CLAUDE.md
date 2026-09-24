@@ -4,10 +4,20 @@ L'utilisateur est débutant en code : répondre en français, simplement, et exp
 La page ReliefRoll (`theme-sense/`) est la référence validée par l'utilisateur (« copywriting 9/10 ») :
 chaque nouvelle page produit doit atteindre ce niveau et suivre ce process.
 
+## ⚠️ Règle permanente : noter ce qu'on apprend
+À chaque fois que l'utilisateur corrige, précise une attente, ou que je me corrige moi-même :
+**mettre à jour ce fichier dans la même réponse** (section adaptée ou « Journal des apprentissages »),
+puis commit + push. Ne jamais attendre qu'il le redemande.
+
 ## Contexte boutique
-- **Langue : tout en français d'abord.** L'utilisateur valide tout, PUIS demande la traduction (ex. allemand).
-  Ne pas signaler une langue étrangère comme un problème s'il s'agit de visuels préparés pour plus tard ;
-  à la traduction, reprendre les versions FR validées (textes + prompts d'images) et les traduire.
+- **Langue** :
+  - Textes de la page (template, sections) : **en français** pour que l'utilisateur valide ; traduction
+    (allemand) seulement quand il le demande, à partir des versions FR validées.
+  - **Images avec du texte : prompts directement avec le texte EN ALLEMAND** (le marché final est
+    germanophone). Instructions du prompt en français, texte à afficher en allemand entre « », et une
+    traduction française à côté (hors du bloc à copier) pour qu'il valide le sens. Proposer de relire
+    l'orthographe allemande des images générées (umlauts, fautes de l'IA).
+  - Ne pas signaler une langue étrangère comme un problème dans ses visuels.
 - Thème en ligne : **Sense** (couleurs : turquoise `#1BC7C2`, noir ; police Avenir Next). Marché FR, prix en €.
 - Connecteur Shopify : pas d'écriture sur le thème en ligne (MAIN) et pas de publication de thème → toujours
   travailler sur une **copie** (`themeDuplicate`), puis l'utilisateur publie lui-même.
@@ -64,6 +74,26 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Une URL vide (`""`) dans un réglage de type `url` fait échouer le template → ne pas mettre la clé.
 - Le réseau du sandbox bloque melkanova.com et cdn.shopify.com : impossible de voir la page ou les photos,
   le dire à l'utilisateur et lui demander une capture.
+
+## Journal des apprentissages (préférences et corrections de l'utilisateur)
+- Il veut du **dense, pro, émotionnel** : jamais « fade », jamais « basique ». Il note le copywriting ; 9/10 = cible.
+- Relecture d'images : il en envoie **5 max par message** ; répondre par un **tableau verdict**
+  (garder / changer / déplacer + où la placer + pourquoi), puis les prompts de remplacement à copier.
+- Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
+  (ex. l'utilisation soulagée au bord du lit → A2 ; l'étirement au bord du lit → F1 qui boucle A1).
+- Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
+- Toujours rappeler la **forme exacte du produit** dans chaque prompt (ReliefRoll : anneau noir mat,
+  rouleau de billes noires, liseré turquoise, bouton rond sur le dessus).
+- Réassurance près de la garantie : il pensait « blouse blanche » → refuser le faux médecin, proposer une
+  vraie preuve (citation réelle d'un vrai avis) + une personne heureuse avec le produit.
+- Quand il cite une référence (ex. Bleame), analyser la **logique** (question du prospect à chaque image)
+  et l'adapter honnêtement (pas de fausse urgence, pas de faux UGC).
+- Avant de modifier un template déjà envoyé : **relire la version sur Shopify** (il a pu changer des choses
+  dans l'éditeur) et repartir de celle-là.
+- Petit CSS propre à une section : le mettre dans `{% stylesheet %}` de la section plutôt que de renvoyer
+  tout `reliefroll.css` (gros fichier à coller dans l'appel).
+- Avant publication : lui rappeler l'ordre publier le thème → PUIS assigner le template ; ne pas dépublier
+  PageFly avant (il remettrait le produit sur le template par défaut, dont le bloc d'achat est désactivé).
 
 ## Honnêteté (obligatoire)
 - Avis : uniquement des vrais avis, avec mention de leur origine. Jamais d'avis inventés (illégal en France).
