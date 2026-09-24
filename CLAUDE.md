@@ -44,6 +44,15 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
    Interdit : images décoratives (produit sur une table, dans un tiroir, réveil seul) et **packshot / boîte
    près des boutons d'achat** — ça casse l'émotion. Les packshots vont uniquement dans la galerie produit.
    L'image de l'offre finale doit **boucler l'histoire** en reprenant la scène du problème (A1), résolue.
+   **Carrousel du bloc d'achat (galerie produit) = mini page de vente** : tout ce qu'il faut pour acheter
+   doit être dans la hero section. Chaque image répond à la question du prospect à ce moment-là :
+   1) « C'est pour moi ? pourquoi maintenant ? » → problème dans les mots du client + produit + vraie raison
+      d'agir (offre de lancement, 30 jours, vrai cadeau) + note ; 2) toutes les objections/bénéfices en UNE
+      image (produit en main + ~9 lignes, langage client type « strawberry legs » : ex. « rouillée au réveil »,
+      « premiers pas comme un robot ») ; 3-5) le résultat zone par zone / cas par cas pour que chacun se sente
+      concerné ; 6) mécanisme + vs ce qu'il a déjà essayé ; 7) preuve sociale (vrais avis / vrai UGC) ;
+      8) zéro risque + ce qu'on reçoit. Pas de bouton dessiné dans une image, pas de « offre qui finit
+      aujourd'hui » si c'est faux. Pour réutiliser une image existante, demander à ChatGPT d'y ajouter un titre.
 6. **Vérifier avant de livrer** : retélécharger les fichiers envoyés et les comparer au local,
    lancer Theme Check (`@shopify/theme-check-node`) sur les fichiers `rr-*`.
 7. **Mise en ligne** : l'utilisateur publie la copie, PUIS on assigne le template au produit (`templateSuffix`).
