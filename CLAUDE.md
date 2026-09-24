@@ -79,6 +79,10 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Il veut du **dense, pro, émotionnel** : jamais « fade », jamais « basique ». Il note le copywriting ; 9/10 = cible.
 - Relecture d'images : il en envoie **5 max par message** ; répondre par un **tableau verdict**
   (garder / changer / déplacer + où la placer + pourquoi), puis les prompts de remplacement à copier.
+- Pour relire beaucoup d'images d'un coup : l'utilisateur les dépose sur GitHub (dépôt Yapa2pano/claude,
+  branche de travail, « Add file → Upload files », glisser le dossier entier), puis je fais `git pull` et je
+  les ouvre avec Read. Ranger ensuite dans `images/<produit>/` avec des noms parlants (A1-…, galerie-1-…).
+  Faire alors un inventaire complet : ce qu'on a, où ça va, ce qu'il reste à générer.
 - Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
   (ex. l'utilisation soulagée au bord du lit → A2 ; l'étirement au bord du lit → F1 qui boucle A1).
 - Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
