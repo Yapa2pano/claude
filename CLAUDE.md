@@ -28,6 +28,20 @@ puis commit + push. Ne jamais attendre qu'il le redemande.
    mais la répétition ne doit pas se sentir (autre angle, autre forme, autre scène).
 7. **Connaître la cible mieux que les concurrents** : ses mots, ses moments, ses peurs, ses désirs.
 8. Montrer à l'utilisateur la note avant / après et, en une ligne, pourquoi c'est un 10.
+9. **Équation reine : Résultat = Nombre d'opportunités × Conversion (× valeur de la conversion).**
+   - C'est une multiplication : **travailler en priorité le facteur le plus faible** (1×9 = 9 < 5×5 = 25).
+     0 opportunité × conversion parfaite = 0 ; beaucoup d'opportunités × 0 conversion = 0.
+   - E-commerce : trafic / nombre de créas / segments visés (opportunités) × taux de conversion de la page
+     × panier moyen (valeur : packs, upsell, cadeau). Toujours identifier lequel des trois est le plus faible.
+   - Dans une page : **chaque unité d'attention est une opportunité**. La noter : 7/10 = convertit un peu
+     (un débutant ne voit pas l'erreur) ; 10/10 = convertit beaucoup ; **11/10 = endroit propice à convertir
+     énormément** (la phrase, l'image ou le GIF qui scelle le deal). Repérer ces endroits clés (1re image,
+     bullets du haut, titre, image juste avant un bouton, garantie) et ne JAMAIS s'y contenter de « bien ».
+   - « Bien » est une erreur quand ça peut devenir excellent / brillant. Comme aux échecs ou en esport :
+     saisir l'opportunité offensive quand elle se présente, et la convertir au maximum.
+   - Chercher aussi à **créer de nouvelles opportunités** (nouveaux segments, nouveaux moments d'achat,
+     nouvelles raisons d'acheter), pas seulement à mieux convertir celles qu'on a.
+   - L'objectif est l'état d'achat naturel : désir + confiance > prix.
 
 ## Contexte boutique
 - **Langue** :
