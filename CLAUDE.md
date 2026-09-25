@@ -9,6 +9,25 @@ chaque nouvelle page produit doit atteindre ce niveau et suivre ce process.
 **mettre à jour ce fichier dans la même réponse** (section adaptée ou « Journal des apprentissages »),
 puis commit + push. Ne jamais attendre qu'il le redemande.
 
+## ⚠️ Quand il me corrige
+Si la correction est **fondamentale** (psychologie humaine, vente, valable pour tous les produits) : l'écrire
+ici comme **règle générale**, pas seulement comme correctif du produit en cours. Et quand il me donne
+**des questions à me poser** pour vérifier un output, les ajouter à la « Checklist de vérification » ci-dessous
+et m'en resservir à chaque fois.
+
+## ✅ Checklist de vérification (questions à me poser avant de livrer)
+- **Chaque bullet point / argument** : « Est-ce une raison d'acheter ? » puis « Est-ce une raison
+  **PUISSANTE / émotionnelle** d'acheter ? » → si non, le réécrire jusqu'à ce que ce soit oui.
+- « Est-ce qu'on comprend **immédiatement** pourquoi c'est intéressant, sans interpréter ? » (« Un seul
+  bouton » = il faut deviner que ça veut dire « simple » → effet diminué). Plus on comprend vite, plus ça frappe.
+- « Est-ce que chaque bullet touche une **dimension différente** ? » (douleur, émotion / famille, plaisir,
+  autonomie / dignité, temps, argent…) → séduire plusieurs types de personnes dans la même cible.
+- « Ce texte non gras apporte-t-il un vrai déclencheur, ou occupe-t-il l'attention pour rien ? » →
+  justification seulement si elle ajoute un trigger (ex. « un seul achat, pour tous vos matins »).
+- Réassurance (garantie, livraison) dans les bullets : **1 sur 4 maximum**, ou 0 si d'autres triggers sont
+  plus forts (la réassurance est déjà dans les badges juste en dessous).
+- Relire à voix haute comme un client de 60 ans : français parlé, sans anglicisme ni pronom ambigu.
+
 ## ⚠️ Méthode de travail obligatoire, sur TOUT
 (hooks, CRO, créas, pubs, landing page, bullet points, titres, images, e-mails…)
 1. **Produire** à partir du contexte : cible, produit, marché, matière existante.
@@ -144,6 +163,9 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Un badge / pastille / texte posé sur une image ne doit **jamais cacher le visage ni le produit** :
   petit, dans un coin vide (le « 30 jours » cachait le produit en main sur G1).
 - Une URL vide (`""`) dans un réglage de type `url` fait échouer le template → ne pas mettre la clé.
+- « inkl. MwSt. » sous le prix = mention « taxes incluses » du thème (langue allemande). Masquée sur la page
+  ReliefRoll (`.product .product__tax { display: none; }` dans pdp_1) à sa demande. ⚠️ En Allemagne, afficher
+  « inkl. MwSt. » près du prix est **obligatoire** (loi PAngV) : à remettre avant de vendre au marché allemand.
 - Le réseau du sandbox bloque melkanova.com et cdn.shopify.com : impossible de voir la page ou les photos,
   le dire à l'utilisateur et lui demander une capture.
 
