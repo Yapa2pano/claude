@@ -172,6 +172,17 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Avant publication : lui rappeler l'ordre publier le thème → PUIS assigner le template ; ne pas dépublier
   PageFly avant (il remettrait le produit sur le template par défaut, dont le bloc d'achat est désactivé).
 
+## Règles pubs Meta (Facebook / Instagram) — à vérifier sur chaque créa
+- **Caractéristiques personnelles** : ne jamais affirmer ni sous-entendre que le spectateur a un problème de
+  santé (« Vous avez mal au dos ? », « Morgens wie eingerostet? »). Parler de la situation, pas de « vous »
+  (« Wenn der Rücken morgens eingerostet ist … »). Ces hooks en « vous » restent OK **sur la page produit**.
+- **Avant / après** dans la catégorie santé ou bien-être : risqué en pub (OK sur la page).
+- **Gros plans de peau / parties du corps** : risque de refus automatique → montrer le produit par-dessus
+  un vêtement dans les pubs.
+- Pas de promesse de résultat médical ; pas de faux témoignage (voix off ou acteur IA = mise en scène,
+  jamais « je l'ai acheté »).
+- Musique : Sound Collection de Meta (libre pour les pubs) ou musique CapCut marquée « usage commercial ».
+
 ## Honnêteté (obligatoire)
 - Avis : uniquement des vrais avis, avec mention de leur origine. Jamais d'avis inventés (illégal en France).
 - Pas d'allégation invérifiable (ex. « Certifié CE », chiffres de ventes) sans preuve de l'utilisateur.
