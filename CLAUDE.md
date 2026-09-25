@@ -164,6 +164,10 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
   geste → 7:15 moment de vie → carry E1 → carte de fin « 30 jours pour tester »).
 - Il veut **abandonner PageFly** pour ReliefRoll. Ordre sûr : il publie la copie du thème → je dépublie la
   page PageFly et j'assigne `templateSuffix` du produit (dans la foulée, sinon page cassée).
+- ReliefRoll est **en ligne** sur le thème « Sense – ReliefRoll LP » (publié), template `reliefroll` assigné,
+  PageFly dépublié. Aperçu dans l'éditeur de thème : tant qu'aucun produit n'est assigné au template,
+  l'éditeur affiche un **autre produit au hasard** (images qui ne correspondent pas) → toujours vérifier sur
+  l'URL réelle du produit. Je ne peux pas voir le site (réseau bloqué) : lui demander des captures mobile.
 - Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
   (ex. l'utilisation soulagée au bord du lit → A2 ; l'étirement au bord du lit → F1 qui boucle A1).
 - Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
