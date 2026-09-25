@@ -149,6 +149,13 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Je peux **fabriquer moi-même un GIF « avant → pendant → après »** à partir d'images existantes (Pillow :
   recadrage carré 600 px, fondus, palette commune 128 couleurs sans tramage → ~2,5 Mo). Élément carry
   « show, don't tell » à placer en 2e position de la galerie.
+- Je peux **monter des vidéos pub 9:16** (MP4) à partir de ses images : `pip install imageio-ffmpeg`
+  (fournit ffmpeg), Pillow pour les images, police DejaVu (`/usr/share/fonts/truetype/dejavu/`, gère les
+  umlauts). Format : image au centre sur fond flouté, texte dans un bandeau turquoise en haut (zone sûre
+  TikTok / Reels), léger zoom par scène. Démo : `images/reliefroll/pubs/demo-pub-9x16-DE.mp4`.
+  Je ne sais PAS générer de voix off, de musique ni d'images animées réalistes : pour ça, il génère les
+  clips dans un outil vidéo IA (image → vidéo) à partir de mes prompts, les dépose sur GitHub, et je fais le
+  montage final (ordre, coupes, textes, sous-titres).
 - Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
   (ex. l'utilisation soulagée au bord du lit → A2 ; l'étirement au bord du lit → F1 qui boucle A1).
 - Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
