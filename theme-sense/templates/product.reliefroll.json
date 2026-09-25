@@ -227,7 +227,8 @@
     "image_right": false,
     "bg": "sand",
     "pt": 80,
-    "pb": 80
+    "pb": 80,
+    "image": "shopify://shop_images/reliefroll-a1-probleme-main-sur-le-dos.png"
    }
   },
   "rr_solution": {
@@ -278,7 +279,8 @@
     "image_right": true,
     "bg": "white",
     "pt": 88,
-    "pb": 88
+    "pb": 88,
+    "image": "shopify://shop_images/reliefroll-a2-solution-soulagee-bord-du-lit.png"
    }
   },
   "rr_benefits": {
@@ -291,7 +293,8 @@
       "title": "Il roule",
       "text": "<p>Ses têtes roulent sur le muscle comme des mains qui pétrissent, pour dénouer les tensions accumulées pendant la nuit.</p>",
       "fallback": 2,
-      "image_label": "B1 – Gros plan des têtes qui roulent sur le bas du dos"
+      "image_label": "B1 – Gros plan des têtes qui roulent sur le bas du dos",
+      "image": "shopify://shop_images/reliefroll-b1-il-roule.png"
      }
     },
     "bn_2": {
@@ -301,7 +304,8 @@
       "title": "Il tapote",
       "text": "<p>La percussion envoie de petites impulsions rapides qui relâchent le muscle en profondeur — là où une crème ne va pas.</p>",
       "fallback": 3,
-      "image_label": "B2 – Effet percussion, ondes visibles sur la peau"
+      "image_label": "B2 – Effet percussion, ondes visibles sur la peau",
+      "image": "shopify://shop_images/reliefroll-b2-il-tapote-ondes.png"
      }
     },
     "bn_3": {
@@ -311,7 +315,8 @@
       "title": "3 niveaux d'intensité",
       "text": "<p>Doux le matin, plus soutenu après une journée debout. Vous choisissez, d'un simple bouton.</p>",
       "fallback": 4,
-      "image_label": "B3 – Elle appuie sur le bouton en souriant"
+      "image_label": "B3 – Elle appuie sur le bouton en souriant",
+      "image": "shopify://shop_images/reliefroll-b3-bouton-sourire.png"
      }
     },
     "bn_4": {
@@ -321,7 +326,8 @@
       "title": "Au bord du lit",
       "text": "<p>Pas besoin de vous allonger au sol ni de vous contorsionner. Assis, 10 minutes, et vous vous levez plus souple.</p>",
       "fallback": 5,
-      "image_label": "B4 – Foam roller au sol vs ReliefRoll au bord du lit"
+      "image_label": "B4 – Foam roller au sol vs ReliefRoll au bord du lit",
+      "image": "shopify://shop_images/reliefroll-b4-foam-roller-vs-lit.png"
      }
     },
     "bn_5": {
@@ -331,7 +337,8 @@
       "title": "Sans fil, rechargeable",
       "text": "<p>Batterie rechargeable par USB-C : aucun câble qui gêne pendant l'utilisation.</p>",
       "fallback": 6,
-      "image_label": "B5 – Sur l'épaule du mari, devant le film du soir"
+      "image_label": "B5 – Sur l'épaule du mari, devant le film du soir",
+      "image": "shopify://shop_images/reliefroll-b5-couple-film-du-soir.png"
      }
     },
     "bn_6": {
@@ -341,7 +348,8 @@
       "title": "Compact, il vous suit partout",
       "text": "<p>Il tient dans une main et se glisse dans une valise. Chez vos enfants, en vacances : votre rituel du matin vient avec vous.</p>",
       "fallback": 7,
-      "image_label": "B6 – Glissé dans la valise pour aller voir les petits-enfants"
+      "image_label": "B6 – Glissé dans la valise pour aller voir les petits-enfants",
+      "image": "shopify://shop_images/reliefroll-b6-valise-petits-enfants.png"
      }
     }
    },
@@ -428,7 +436,8 @@
     "image_right": false,
     "bg": "ink",
     "pt": 96,
-    "pb": 96
+    "pb": 96,
+    "image": "shopify://shop_images/reliefroll-d1-seule-a-l-aube.png"
    }
   },
   "rr_comparison": {
@@ -559,12 +568,13 @@
     "text_after": "<p>Et vous n'avez besoin de demander à personne. C'est dans votre table de nuit. <strong>Vous décidez.</strong></p>",
     "button_label": "Je retrouve mes matins",
     "fallback": 6,
-    "image_label": "E1 – Senior souriant qui jardine ou porte un petit-enfant",
+    "image_label": "E1 – Sa petite-fille court vers elle dans le jardin",
     "ratio": "4 / 5",
     "image_right": true,
     "bg": "white",
     "pt": 88,
-    "pb": 88
+    "pb": 88,
+    "image": "shopify://shop_images/reliefroll-e1-petite-fille-jardin.png"
    }
   },
   "rr_reviews": {
@@ -681,7 +691,8 @@
     "quote_author": "H***e",
     "quote_source": "Achat vérifié",
     "fallback": 1,
-    "image_label": "G1 – Dans son fauteuil, ReliefRoll en main, sourire confiant"
+    "image_label": "G1 – Dans son fauteuil, ReliefRoll en main, sourire confiant",
+    "image": "shopify://shop_images/reliefroll-g1-garantie-sourire-confiant.png"
    }
   },
   "rr_faq": {
@@ -787,10 +798,11 @@
     "note_2": "Livraison suivie 5–8 jours",
     "note_3": "Paiement sécurisé",
     "fallback": 1,
-    "image_label": "F1 – Elle s'étire au bord du lit, libérée",
+    "image_label": "F1 – Elle enfile ses chaussures, sa petite-fille l'attend à la porte",
     "bg": "ink",
     "pt": 96,
-    "pb": 96
+    "pb": 96,
+    "image": "shopify://shop_images/reliefroll-f1-chaussures-petite-fille-porte.png"
    }
   },
   "rr_sticky": {
