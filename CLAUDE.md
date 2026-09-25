@@ -73,7 +73,12 @@ puis commit + push. Ne jamais attendre qu'il le redemande.
   travailler sur une **copie** (`themeDuplicate`), puis l'utilisateur publie lui-même.
 - Le `templates/product.json` par défaut de Sense a sa section `main` **désactivée** (les anciennes pages passent
   par PageFly / PagePilot). Ne jamais basculer un produit vers un template qui n'existe pas sur le thème en ligne.
-- Thème copie actuel : « Sense – ReliefRoll LP » (`gid://shopify/OnlineStoreTheme/182913794371`).
+- Thème en ligne (MAIN) : « Sense – ReliefRoll LP » (`182913794371`). Copie de corrections en cours :
+  « Sense – ReliefRoll v2 (corrections) » (`gid://shopify/OnlineStoreTheme/182917333315`).
+- Une fois une copie publiée, elle devient MAIN et je ne peux plus y écrire → pour chaque série de
+  corrections : nouveau `themeDuplicate` du thème en ligne, modifier la copie, il la publie.
+  `themeDuplicate` est **asynchrone** : attendre `processing: false` avant d'envoyer des fichiers,
+  sinon la copie écrase mon envoi (arrivé une fois). Toujours vérifier les `checksumMd5` à la fin.
 
 ## Les sections réutilisables (déjà dans la copie du thème)
 Les 10 sections `rr-*` + `assets/reliefroll.css` + snippets `rr-icon`, `rr-media`, `rr-stars` sont génériques.
@@ -130,12 +135,24 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Nom de section / preset / bloc dans un schema : **25 caractères max**.
 - Les blocs « Custom Liquid » n'ont pas accès à l'objet `section` (pas de `section.id`) ; `render` fonctionne.
 - Pas de filtres dans les paramètres nommés d'un filtre (`alt: x | default: y` interdit → faire un `assign` avant).
+- CSS dans `{% stylesheet %}` : il est chargé AVANT `reliefroll.css`, donc à spécificité égale il perd.
+  Toujours préfixer par le parent (`.rr-guarantee__media .rr-seal.rr-seal--badge`, `.rr-guarantee.rr-guarantee--media`).
+- Un badge / pastille / texte posé sur une image ne doit **jamais cacher le visage ni le produit** :
+  petit, dans un coin vide (le « 30 jours » cachait le produit en main sur G1).
 - Une URL vide (`""`) dans un réglage de type `url` fait échouer le template → ne pas mettre la clé.
 - Le réseau du sandbox bloque melkanova.com et cdn.shopify.com : impossible de voir la page ou les photos,
   le dire à l'utilisateur et lui demander une capture.
 
 ## Journal des apprentissages (préférences et corrections de l'utilisateur)
 - Il veut du **dense, pro, émotionnel** : jamais « fade », jamais « basique ». Il note le copywriting ; 9/10 = cible.
+- **Français impeccable et parlé** : il relit et repère les phrases bancales. Avant de livrer, relire
+  chaque texte comme un client de 60 ans à voix haute : pas d'anglicisme (« sans y penser deux fois » →
+  « sans même y penser »), pas de pronom ambigu (« Il est dans votre table de nuit » après « kiné » = le kiné !),
+  pas de logique bancale (« le geste que le kiné ne peut pas être »), éviter les adjectifs genrés
+  (« reposé », « courbé » → « le dos courbé »), pas de formule vague (« votre moment précis »).
+- Section « ce que vous allez pouvoir refaire » : au **futur** (« Vous vous lèverez… », « Vous porterez… »).
+- Il adore les **phrases « déclic » mises en valeur** dans un encadré (« Faire avec, ce n'est pas la même
+  chose qu'accepter. ») : en prévoir une dans chaque section clé, courte, qui se lit en une seconde.
 - Relecture d'images : il en envoie **5 max par message** ; répondre par un **tableau verdict**
   (garder / changer / déplacer + où la placer + pourquoi), puis les prompts de remplacement à copier.
 - Pour relire beaucoup d'images d'un coup : l'utilisateur les dépose sur GitHub (dépôt Yapa2pano/claude,
