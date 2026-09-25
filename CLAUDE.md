@@ -171,6 +171,8 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Une URL vide (`""`) dans un réglage de type `url` fait échouer le template → ne pas mettre la clé.
 - « inkl. MwSt. » sous le prix = mention « taxes incluses » du thème (classe `.product__tax`). Obligatoire en
   Allemagne (loi PAngV) → **ne jamais la masquer** (masquée puis remise à sa demande).
+  Elle doit rester **collée au prix** (pas plus bas) : on la rend discrète (petite, grisée, sans marge) au lieu
+  de la déplacer.
 - Le réseau du sandbox bloque melkanova.com et cdn.shopify.com : impossible de voir la page ou les photos,
   le dire à l'utilisateur et lui demander une capture.
 
