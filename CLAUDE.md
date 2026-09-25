@@ -37,6 +37,32 @@ et m'en resservir à chaque fois.
 - Bullets du bloc d'achat : **tout en gras** (il préfère), commencer par un verbe d'action ou « Fini… »
   (« Portez vos petits-enfants… »).
 
+### Page produit — 2 questions à me poser à chaque fois
+- « Y a-t-il **une ou plusieurs raisons de NE PAS acheter ici et maintenant** ? » → les retirer **toutes**
+  (doute, prix perçu, délai, frais de port, effort, risque, question sans réponse, « je verrai plus tard »).
+- « Y a-t-il **une ou plusieurs raisons FORTES d'acheter ici et maintenant** ? » → si c'est un 6-7/10,
+  le transformer en 10-11/10 : corriger moi-même, ou **proposer** quand ça touche l'offre / la marge
+  (ex. livraison gratuite débloquée par défaut + cadeaux à débloquer par palier avec **Moonbundles**,
+  vrai bonus, pack duo). Pas de fausse urgence.
+
+### Créas / hooks / pubs — 4 questions à me poser à chaque fois
+- « Y a-t-il des raisons pour la cible de **NE PAS s'arrêter** et regarder ici et maintenant ? » → les retirer.
+- « Y a-t-il des raisons **FORTES** pour la cible de s'arrêter et regarder ? » (curiosité, émotion, enjeu,
+  intérêt logique, besoin de voir la suite — et **uniquement pour la cible** qui peut acheter : dopamine
+  sur mesure, ce qui n'accroche qu'elle).
+- « Y a-t-il des raisons de **NE PAS cliquer** / aller sur la boutique ? » → ex. pas de CTA clair ; CTA trop
+  offensif (ordre, pression, le prospect se sent obligé) ; trop compliqué, trop d'effort, pas assez
+  « système 1 » (il faut réfléchir). → CTA clair, doux, sans effort (« Voir comment ça marche », « Découvrir »).
+- « Y a-t-il des raisons **FORTES** de cliquer ? »
+- **Objectif d'une créa** : faire passer le prospect d'un **état A** (il scrolle en mode hypnotique, cherche
+  de la dopamine, sans contexte) à un **état B** (il comprend le produit, ce que ça lui apporte, perçoit
+  BEAUCOUP de valeur pour lui → fort désir / besoin + momentum émotionnel → il clique). Chemin :
+  1. **Hook** qui arrête uniquement la cible (curiosité / émotion / enjeu / intérêt logique / envie de voir la suite) ;
+  2. **Contexte compris le plus vite possible** (de quoi on parle, pour qui) ;
+  3. **Rentabiliser chaque unité d'attention** avec des éléments carry (le plus grand avancement vers
+     l'état d'achat par unité d'attention) pour construire le désir ;
+  4. **CTA doux et évident**.
+
 ## ⚠️ Méthode de travail obligatoire, sur TOUT
 (hooks, CRO, créas, pubs, landing page, bullet points, titres, images, e-mails…)
 1. **Produire** à partir du contexte : cible, produit, marché, matière existante.
