@@ -139,7 +139,9 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Relecture d'images : il en envoie **5 max par message** ; répondre par un **tableau verdict**
   (garder / changer / déplacer + où la placer + pourquoi), puis les prompts de remplacement à copier.
 - Pour relire beaucoup d'images d'un coup : l'utilisateur les dépose sur GitHub (dépôt Yapa2pano/claude,
-  branche de travail, « Add file → Upload files », glisser le dossier entier), puis je fais `git pull` et je
+  branche de travail, « Add file → Upload files »). Limites du site : 100 fichiers et 25 Mo par fichier
+  par envoi → le dossier entier échoue : envoyer **par paquets d'environ 20 images**, et si besoin les
+  compresser d'abord sur tinypng.com. Ensuite je fais `git pull` et je
   les ouvre avec Read. Ranger ensuite dans `images/<produit>/` avec des noms parlants (A1-…, galerie-1-…).
   Faire alors un inventaire complet : ce qu'on a, où ça va, ce qu'il reste à générer.
 - Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
