@@ -79,6 +79,10 @@ puis commit + push. Ne jamais attendre qu'il le redemande.
   corrections : nouveau `themeDuplicate` du thème en ligne, modifier la copie, il la publie.
   `themeDuplicate` est **asynchrone** : attendre `processing: false` avant d'envoyer des fichiers,
   sinon la copie écrase mon envoi (arrivé une fois). Toujours vérifier les `checksumMd5` à la fin.
+- Les copies non publiées ne ralentissent pas le site (seul le thème publié est servi aux clients) ; les images
+  sont dans *Contenu → Fichiers*, partagées par tous les thèmes. Limite Shopify : 20 thèmes. Règle de
+  rangement convenue : garder **le thème en ligne + la version précédente** (secours) ; il supprime les plus
+  anciennes lui-même (je ne peux pas supprimer de thème). On ne peut pas « dépublier » un thème.
 
 ## Les sections réutilisables (déjà dans la copie du thème)
 Les 10 sections `rr-*` + `assets/reliefroll.css` + snippets `rr-icon`, `rr-media`, `rr-stars` sont génériques.
