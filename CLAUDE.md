@@ -224,6 +224,12 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
   (ex. l'utilisation soulagée au bord du lit → A2 ; l'étirement au bord du lit → F1 qui boucle A1).
 - Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
+- **Avant de mettre une image IA en ligne, vérifier la physique du produit** (forme, taille, où sont les
+  billes, comment on le tient) : une image où le produit est déformé fait « faux » et casse la confiance
+  → retirée (ex. « Beine » : ReliefRoll mal dessiné sur le genou). Refuser plutôt que publier une image douteuse.
+- **GIF du produit en action à partir d'une vraie vidéo** : il dépose la vidéo sur GitHub (≤ 25 Mo), je coupe
+  les 2–4 meilleures secondes, 600 px, ~12 i/s, palette commune → GIF en boucle (se lance tout seul dans la
+  galerie, contrairement aux vidéos Shopify qui demandent un clic). Vraie vidéo = preuve du mécanisme.
 - Toujours rappeler la **forme exacte du produit** dans chaque prompt (ReliefRoll : anneau noir mat,
   rouleau de billes noires, liseré turquoise, bouton rond sur le dessus).
 - Bloc d'achat : le **meilleur vrai avis** (citation + étoiles + prénom masqué + « Achat vérifié ») juste sous
