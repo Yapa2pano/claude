@@ -144,6 +144,11 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
   compresser d'abord sur tinypng.com. Ensuite je fais `git pull` et je
   les ouvre avec Read. Ranger ensuite dans `images/<produit>/` avec des noms parlants (A1-…, galerie-1-…).
   Faire alors un inventaire complet : ce qu'on a, où ça va, ce qu'il reste à générer.
+- Rangement des images d'un produit : `images/<produit>/page` (A1…G1), `galerie` (01…09 dans l'ordre du
+  carrousel), `reserve`, `pubs`, `a-supprimer`. Noms parlants, suffixe `-CARRY` pour les éléments carry.
+- Je peux **fabriquer moi-même un GIF « avant → pendant → après »** à partir d'images existantes (Pillow :
+  recadrage carré 600 px, fondus, palette commune 128 couleurs sans tramage → ~2,5 Mo). Élément carry
+  « show, don't tell » à placer en 2e position de la galerie.
 - Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
   (ex. l'utilisation soulagée au bord du lit → A2 ; l'étirement au bord du lit → F1 qui boucle A1).
 - Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
