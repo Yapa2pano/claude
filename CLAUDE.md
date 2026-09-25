@@ -173,6 +173,10 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
   PageFly avant (il remettrait le produit sur le template par défaut, dont le bloc d'achat est désactivé).
 
 ## Règles pubs Meta (Facebook / Instagram) — à vérifier sur chaque créa
+⚠️ **Règle permanente demandée par l'utilisateur : TOUT ce que je produis doit être compatible Meta**
+(pubs, hooks, scripts, visuels, vidéos, et aussi les pages vers lesquelles les pubs envoient).
+À chaque script, hook ou créa, **ajouter de moi-même une ligne « ✅ Compatible Meta » ou « ⚠️ Risque Meta :
+… + version corrigée »**, sans attendre qu'il le demande.
 - **Caractéristiques personnelles** : ne jamais affirmer ni sous-entendre que le spectateur a un problème de
   santé (« Vous avez mal au dos ? », « Morgens wie eingerostet? »). Parler de la situation, pas de « vous »
   (« Wenn der Rücken morgens eingerostet ist … »). Ces hooks en « vous » restent OK **sur la page produit**.
