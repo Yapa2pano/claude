@@ -22,7 +22,7 @@
     "pdp_4": {
      "type": "custom_liquid",
      "settings": {
-      "custom_liquid": "<ul class=\"rr-pdp-benefits\">\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Fini le dos « en planche » au réveil</strong> : 10 minutes au bord du lit, et vous vous levez plus souple, plus en deux temps.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Vos petits-enfants courent vers vous ?</strong> Vous vous accroupissez pour les serrer, sans y penser deux fois.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Dimanche, 7 h, pas de kiné ?</strong> Il est dans votre table de nuit. Pas de rendez-vous, et vous n'avez besoin de personne.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Un seul bouton.</strong> Si vous savez allumer une lampe, vous savez vous en servir.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Fini les tubes de crème à racheter</strong> : un seul achat, pour tous vos matins.</span></li>\n</ul>"
+      "custom_liquid": "<ul class=\"rr-pdp-benefits\">\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Fini le dos « en planche » au réveil</strong> : 10 minutes au bord du lit, et vous vous levez d'un seul mouvement, sans vous y reprendre à deux fois.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Vos petits-enfants courent vers vous ?</strong> Vous vous accroupissez pour les serrer dans vos bras, sans même y penser.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Dimanche, 7 h, pas de kiné ?</strong> ReliefRoll™ vous attend dans la table de nuit. Pas de rendez-vous, et besoin de personne.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Un seul bouton.</strong> Si vous savez allumer une lampe, vous savez vous en servir.</span></li>\n  <li>{% render 'rr-icon', name: 'check-circle' %}<span><strong>Fini les tubes de crème à racheter</strong> : un seul achat, pour tous vos matins.</span></li>\n</ul>"
      }
     },
     "pdp_5": {
@@ -179,7 +179,7 @@
      "settings": {
       "icon": "x-circle",
       "title": "",
-      "text": "Vous vous réveillez avant le réveil — pas parce que vous êtes reposé, mais parce que votre bas du dos vous le rappelle."
+      "text": "C'est votre dos qui vous réveille le matin, pas votre réveil."
      }
     },
     "pb_2": {
@@ -187,7 +187,7 @@
      "settings": {
       "icon": "x-circle",
       "title": "",
-      "text": "Les premiers pas vers la cuisine ressemblent plus à un échauffement qu'à un réveil tranquille."
+      "text": "Les premiers pas jusqu'à la cuisine se font à petits pas, une main sur les reins."
      }
     },
     "pb_3": {
@@ -216,10 +216,10 @@
    "settings": {
     "eyebrow": "Ce que vous vivez chaque matin",
     "heading": "Vous avez déjà tout essayé. <em>Ce n'est pas votre faute.</em>",
-    "text": "<p>Le bas du dos raide au réveil, ce n'est pas « l'âge » qu'il faudrait accepter. C'est un muscle tendu toute la nuit qui a besoin d'être réveillé en douceur.</p>",
+    "text": "<p>Le bas du dos raide au réveil, ce n'est pas « l'âge » qu'il faudrait accepter. C'est souvent un muscle resté crispé toute la nuit, qui a besoin d'être réveillé en douceur.</p>",
     "list_style": "pain",
     "quote": "Faire avec, ce n'est pas la même chose qu'accepter.",
-    "text_after": "<p>Crème chauffante, coussin électrique, foam roller… Ce n'est pas un manque d'efforts de votre part. Ce sont des solutions qui n'ont jamais été pensées pour <strong>votre moment précis</strong> : les 10 premières minutes après le réveil, au bord du lit.</p>",
+    "text_after": "<p>Crème chauffante, coussin électrique, foam roller… Ce n'est pas un manque d'efforts de votre part. Aucune de ces solutions n'a été pensée pour <strong>le moment où vous en avez le plus besoin</strong> : les 10 premières minutes après le réveil, au bord du lit.</p>",
     "button_label": "",
     "fallback": 2,
     "image_label": "A1 – Personne assise au bord du lit, main sur le bas du dos",
@@ -246,7 +246,7 @@
      "type": "point",
      "settings": {
       "icon": "bed",
-      "title": "Il s'utilise là où la douleur commence",
+      "title": "Il s'utilise là où la journée commence",
       "text": "Assis au bord du lit, avant même de vous lever. Pas besoin de vous allonger au sol."
      }
     },
@@ -267,7 +267,7 @@
    "settings": {
     "eyebrow": "La solution",
     "heading": "ReliefRoll™ : <em>le geste de 10 minutes</em> qui change vos matins",
-    "text": "<p>Un masseur compact qui <strong>roule</strong> sur vos muscles comme des mains qui pétrissent, et les <strong>tapote</strong> comme de petits coups qui relâchent. Deux mouvements en un seul appareil, pensé pour vos premières minutes de la journée.</p>",
+    "text": "<p>Un masseur compact qui <strong>roule</strong> sur vos muscles comme des mains qui pétrissent, et les <strong>tapote</strong> par petits coups rapides pour les relâcher. Deux mouvements en un seul appareil, pensé pour vos premières minutes de la journée.</p>",
     "list_style": "benefit",
     "quote": "",
     "text_after": "",
@@ -291,7 +291,7 @@
      "settings": {
       "icon": "waves",
       "title": "Il roule",
-      "text": "<p>Ses têtes roulent sur le muscle comme des mains qui pétrissent, pour dénouer les tensions accumulées pendant la nuit.</p>",
+      "text": "<p>Son rouleau de billes glisse sur le muscle comme des mains qui pétrissent, pour dénouer les tensions accumulées pendant la nuit.</p>",
       "fallback": 2,
       "image_label": "B1 – Gros plan des têtes qui roulent sur le bas du dos",
       "image": "shopify://shop_images/reliefroll-b1-il-roule.png"
@@ -364,7 +364,7 @@
    "settings": {
     "eyebrow": "Pourquoi ça marche",
     "heading": "Deux mouvements. <em>Zéro effort</em> de votre part.",
-    "text": "<p>Une crème couvre la douleur. ReliefRoll™ agit sur le muscle.</p>",
+    "text": "<p>Une crème chauffe la peau. ReliefRoll™ travaille le muscle.</p>",
     "columns": "3",
     "show_images": true,
     "ratio": "4 / 3",
@@ -427,7 +427,7 @@
     "heading": "Votre bas du dos se bloque dans votre lit. <em>Pas chez le kiné.</em>",
     "text": "<p>Le kiné aide. Mais il n'est pas là un dimanche matin à 7 h. Entre l'ordonnance, le rendez-vous et les semaines d'attente, votre bas du dos, lui, se bloque tous les matins.</p><p>ReliefRoll™ est pensé pour un seul moment : <strong>les 10 premières minutes après votre réveil</strong>, quand votre dos décide si votre journée commence debout… ou courbé.</p>",
     "list_style": "benefit",
-    "quote": "ReliefRoll™ ne remplace pas le kiné. C'est le geste quotidien que le kiné ne peut pas être.",
+    "quote": "ReliefRoll™ ne remplace pas le kiné. Il est là où le kiné ne peut pas être : chaque matin, au bord de votre lit.",
     "text_after": "",
     "button_label": "Commencer demain matin",
     "fallback": 8,
@@ -524,32 +524,32 @@
      "type": "point",
      "settings": {
       "icon": "check-circle",
-      "title": "Vous levez sans grimacer",
-      "text": "Les premiers pas du matin redeviennent… des premiers pas."
+      "title": "Vous vous lèverez sans grimacer",
+      "text": "Vos premiers pas du matin redeviendront légers."
      }
     },
     "tr_2": {
      "type": "point",
      "settings": {
       "icon": "check-circle",
-      "title": "Vous jardinez plus longtemps",
-      "text": "Arroser, tailler, désherber sans devoir vous arrêter au bout de cinq minutes."
+      "title": "Vous jardinerez plus longtemps",
+      "text": "Arroser, tailler, désherber, sans devoir vous arrêter au bout de cinq minutes."
      }
     },
     "tr_3": {
      "type": "point",
      "settings": {
       "icon": "check-circle",
-      "title": "Vous portez vos petits-enfants",
-      "text": "Vous vous accroupissez pour les prendre dans vos bras, sans y penser deux fois."
+      "title": "Vous porterez vos petits-enfants dans vos bras",
+      "text": "Vous vous accroupirez pour les serrer contre vous, sans même y penser."
      }
     },
     "tr_4": {
      "type": "point",
      "settings": {
       "icon": "check-circle",
-      "title": "Vous reprenez vos balades",
-      "text": "La promenade du dimanche n'est plus une question de « si le dos le permet »."
+      "title": "Vous reprendrez vos balades",
+      "text": "La promenade du dimanche ne sera plus une question de « si mon dos le permet »."
      }
     }
    },
@@ -565,7 +565,7 @@
     "text": "",
     "list_style": "benefit",
     "quote": "",
-    "text_after": "<p>Et vous n'avez besoin de demander à personne. C'est dans votre table de nuit. <strong>Vous décidez.</strong></p>",
+    "text_after": "<p>Et vous n'aurez besoin de personne : il vous attend dans la table de nuit. <strong>C'est vous qui décidez.</strong></p>",
     "button_label": "Je retrouve mes matins",
     "fallback": 6,
     "image_label": "E1 – Sa petite-fille court vers elle dans le jardin",
@@ -683,7 +683,7 @@
     "seal_text": "jours pour tester",
     "eyebrow": "Zéro risque",
     "heading": "Essayez-le chaque matin pendant 30 jours",
-    "text": "<p>Utilisez ReliefRoll™ comme vous le souhaitez pendant 30 jours. Si vous ne sentez aucune différence, écrivez-nous : <strong>nous vous remboursons, sans justification à fournir.</strong> Le seul risque, c'est de continuer à commencer vos journées courbé.</p>",
+    "text": "<p>Utilisez ReliefRoll™ comme vous le souhaitez pendant 30 jours. Si vous ne sentez aucune différence, écrivez-nous : <strong>nous vous remboursons, sans justification à fournir.</strong> Le seul risque, c'est de continuer à démarrer vos journées le dos courbé.</p>",
     "bg": "white",
     "pt": 88,
     "pb": 88,
@@ -702,13 +702,13 @@
      "type": "question",
      "settings": {
       "question": "Est-ce compliqué à utiliser ?",
-      "answer": "<p>Non. Un bouton, 3 niveaux, 10 minutes. Vous vous asseyez, vous allumez, vous posez sur le bas du dos.</p>"
+      "answer": "<p>Non. Un bouton, 3 niveaux, 10 minutes. Vous vous asseyez, vous l'allumez, vous le posez sur le bas du dos.</p>"
      }
     },
     "fq_2": {
      "type": "question",
      "settings": {
-      "question": "Je peux l'utiliser seul, sans aide ?",
+      "question": "Puis-je l'utiliser sans l'aide de personne ?",
       "answer": "<p>Oui. Assis au bord du lit ou allongé, vous n'avez besoin de personne.</p>"
      }
     },
@@ -722,7 +722,7 @@
     "fq_4": {
      "type": "question",
      "settings": {
-      "question": "J'ai de l'arthrose légère au dos, est-ce sûr pour moi ?",
+      "question": "J'ai un peu d'arthrose au dos : puis-je l'utiliser ?",
       "answer": "<p>ReliefRoll™ est pensé pour les tensions musculaires légères et <strong>ne remplace pas un avis médical</strong>. Si vous avez une pathologie diagnostiquée, parlez-en d'abord à votre médecin.</p>"
      }
     },
@@ -790,8 +790,8 @@
    "type": "rr-offer",
    "settings": {
     "eyebrow": "Offre de lancement",
-    "heading": "Vos matins méritent mieux <em>qu'un réveil courbé.</em>",
-    "text": "<p>Vous avez sûrement déjà dépensé plus que ça en crèmes et en coussins qui prennent la poussière. ReliefRoll™, c'est un achat unique, utilisable chaque matin — et 30 jours pour vous faire votre propre avis.</p>",
+    "heading": "Vos matins méritent mieux <em>qu'un dos rouillé.</em>",
+    "text": "<p>Vous avez sûrement déjà dépensé plus que son prix en crèmes et en coussins qui prennent la poussière. ReliefRoll™, c'est un achat unique, utilisable chaque matin — et 30 jours pour vous faire votre propre avis.</p>",
     "urgency": "Offre de lancement en cours",
     "button_label": "Je commande mon ReliefRoll™",
     "note_1": "Garantie 30 jours",

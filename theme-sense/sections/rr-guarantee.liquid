@@ -43,17 +43,19 @@
 </div>
 {% stylesheet %}
 /* Garantie avec image + preuve client */
-.rr-guarantee--media { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.rr-guarantee.rr-guarantee--media { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
 .rr-guarantee__media { position: relative; }
-.rr-seal--badge {
+.rr-guarantee__media .rr-seal.rr-seal--badge {
   position: absolute;
-  right: -18px;
-  bottom: -18px;
-  width: 132px;
-  height: 132px;
+  top: -16px;
+  right: -16px;
+  width: 104px;
+  height: 104px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
-.rr-seal--badge strong { font-size: 42px; }
-.rr-seal--badge span { font-size: 10px; max-width: 90px; }
+.rr-guarantee__media .rr-seal--badge strong { font-size: 34px; }
+.rr-guarantee__media .rr-seal--badge span { font-size: 9px; max-width: 76px; letter-spacing: 0.04em; }
 .rr-proof {
   margin: 26px 0 0;
   padding: 18px 20px;
@@ -65,9 +67,9 @@
 .rr-proof figcaption { font-size: 14px; color: var(--rr-muted); }
 .rr-proof figcaption strong { color: var(--rr-ink); }
 @media (max-width: 749px) {
-  .rr-guarantee--media { grid-template-columns: 1fr; }
-  .rr-seal--badge { right: 12px; bottom: -22px; width: 110px; height: 110px; }
-  .rr-seal--badge strong { font-size: 34px; }
+  .rr-guarantee.rr-guarantee--media { grid-template-columns: 1fr; }
+  .rr-guarantee__media .rr-seal.rr-seal--badge { top: -12px; right: -8px; width: 92px; height: 92px; }
+  .rr-guarantee__media .rr-seal--badge strong { font-size: 30px; }
 }
 {% endstylesheet %}
 
