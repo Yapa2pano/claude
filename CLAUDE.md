@@ -169,6 +169,16 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
   dans l'éditeur) et repartir de celle-là.
 - Petit CSS propre à une section : le mettre dans `{% stylesheet %}` de la section plutôt que de renvoyer
   tout `reliefroll.css` (gros fichier à coller dans l'appel).
+- **Mettre les images sur Shopify moi-même** (le dépôt GitHub est public) : `fileCreate` avec
+  `originalSource` = URL `raw.githubusercontent.com/...` + `filename` propre (`<produit>-a1-…`,
+  `<produit>-gal-01-…`), puis dans le template : `"image": "shopify://shop_images/<filename>"`.
+  Pour envoyer un gros fichier de thème : le pousser sur GitHub puis `themeFilesUpsert` avec
+  `body: {type: URL, value: <raw URL du commit>}` (pas besoin de coller le fichier), vérifier le `checksumMd5`.
+- Les **médias du produit** (galerie) sont partagés avec le site en ligne : les modifier change la page
+  actuelle tout de suite → toujours demander avant.
+- Vidéo : je peux monter de **vraies vidéos** (couper, enchaîner, sous-titres, musique, format 9:16) avec
+  ffmpeg si l'utilisateur les dépose sur GitHub (≤ 25 Mo par fichier) ; je ne peux pas filmer ni générer
+  des rushs, et je « vois » une vidéo en extrayant des images clés.
 - Avant publication : lui rappeler l'ordre publier le thème → PUIS assigner le template ; ne pas dépublier
   PageFly avant (il remettrait le produit sur le template par défaut, dont le bloc d'achat est désactivé).
 
