@@ -31,6 +31,9 @@ et m'en resservir à chaque fois.
   un kiné à la maison 24/7 »). Comparer à un service connu et cher que le produit rend disponible chez soi.
   Mais formuler la comparaison sur la **sensation / l'usage**, pas sur le soin (« comme un massage de kiné à
   la maison » et non « comme un kiné » = promesse de soin, et contradiction avec « ne remplace pas le kiné »).
+- **Ordre des bullets = mini AIDA** : 1er = douleur reconnue (« c'est moi »), milieu = valeur / logique
+  (phrase-image, autonomie, argent), **dernier = le plus émotionnel** (désir juste avant l'offre et le bouton).
+  Premier et dernier sont les plus retenus : ne jamais y mettre un bullet faible.
 - Bullets du bloc d'achat : **tout en gras** (il préfère), commencer par un verbe d'action ou « Fini… »
   (« Portez vos petits-enfants… »).
 
