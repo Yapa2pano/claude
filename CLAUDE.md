@@ -27,6 +27,12 @@ et m'en resservir à chaque fois.
 - Réassurance (garantie, livraison) dans les bullets : **1 sur 4 maximum**, ou 0 si d'autres triggers sont
   plus forts (la réassurance est déjà dans les badges juste en dessous).
 - Relire à voix haute comme un client de 60 ans : français parlé, sans anglicisme ni pronom ambigu.
+- « Y a-t-il une **phrase-image** qui résume toute la valeur en quelques mots ? » (il l'a demandée : « Comme
+  un kiné à la maison 24/7 »). Comparer à un service connu et cher que le produit rend disponible chez soi.
+  Mais formuler la comparaison sur la **sensation / l'usage**, pas sur le soin (« comme un massage de kiné à
+  la maison » et non « comme un kiné » = promesse de soin, et contradiction avec « ne remplace pas le kiné »).
+- Bullets du bloc d'achat : **tout en gras** (il préfère), commencer par un verbe d'action ou « Fini… »
+  (« Portez vos petits-enfants… »).
 
 ## ⚠️ Méthode de travail obligatoire, sur TOUT
 (hooks, CRO, créas, pubs, landing page, bullet points, titres, images, e-mails…)
@@ -163,9 +169,8 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Un badge / pastille / texte posé sur une image ne doit **jamais cacher le visage ni le produit** :
   petit, dans un coin vide (le « 30 jours » cachait le produit en main sur G1).
 - Une URL vide (`""`) dans un réglage de type `url` fait échouer le template → ne pas mettre la clé.
-- « inkl. MwSt. » sous le prix = mention « taxes incluses » du thème (langue allemande). Masquée sur la page
-  ReliefRoll (`.product .product__tax { display: none; }` dans pdp_1) à sa demande. ⚠️ En Allemagne, afficher
-  « inkl. MwSt. » près du prix est **obligatoire** (loi PAngV) : à remettre avant de vendre au marché allemand.
+- « inkl. MwSt. » sous le prix = mention « taxes incluses » du thème (classe `.product__tax`). Obligatoire en
+  Allemagne (loi PAngV) → **ne jamais la masquer** (masquée puis remise à sa demande).
 - Le réseau du sandbox bloque melkanova.com et cdn.shopify.com : impossible de voir la page ou les photos,
   le dire à l'utilisateur et lui demander une capture.
 
@@ -216,6 +221,9 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
 - Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
 - Toujours rappeler la **forme exacte du produit** dans chaque prompt (ReliefRoll : anneau noir mat,
   rouleau de billes noires, liseré turquoise, bouton rond sur le dessus).
+- Bloc d'achat : le **meilleur vrai avis** (citation + étoiles + prénom masqué + « Achat vérifié ») juste sous
+  les badges de confiance, avant les logos de paiement. Badges : 30 jours / livraison suivie / paiement
+  sécurisé / Klarna (en 2×2). Vérifier avec lui que Klarna est bien activé avant de l'afficher.
 - Réassurance près de la garantie : il pensait « blouse blanche » → refuser le faux médecin, proposer une
   vraie preuve (citation réelle d'un vrai avis) + une personne heureuse avec le produit.
 - Quand il cite une référence (ex. Bleame), analyser la **logique** (question du prospect à chaque image)
