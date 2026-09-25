@@ -156,6 +156,14 @@ Pour un nouveau produit : **réutiliser ces sections** et créer seulement `temp
   Je ne sais PAS générer de voix off, de musique ni d'images animées réalistes : pour ça, il génère les
   clips dans un outil vidéo IA (image → vidéo) à partir de mes prompts, les dépose sur GitHub, et je fais le
   montage final (ordre, coupes, textes, sous-titres).
+- Script de montage réutilisable : `outils/make_video.py` (liste de scènes : image, recadrage, texte, durée
+  + carte de fin). Le **bandeau de texte ne doit jamais cacher un visage** : l'image se place sous le
+  bandeau (erreur faite une fois sur les images portrait). Toujours extraire des images clés pour vérifier.
+- Formats pub qui marchent en images seules : **« Les petites choses qu'on ne dit à personne »** (liste de
+  scènes relatables en « man », pas de « vous » → Meta OK) et **mini-histoire horodatée** (7:02 problème →
+  geste → 7:15 moment de vie → carry E1 → carte de fin « 30 jours pour tester »).
+- Il veut **abandonner PageFly** pour ReliefRoll. Ordre sûr : il publie la copie du thème → je dépublie la
+  page PageFly et j'assigne `templateSuffix` du produit (dans la foulée, sinon page cassée).
 - Une bonne image peut valoir plus **ailleurs** dans la page : proposer de la déplacer plutôt que la jeter
   (ex. l'utilisation soulagée au bord du lit → A2 ; l'étirement au bord du lit → F1 qui boucle A1).
 - Réutiliser une image existante en demandant à ChatGPT d'y ajouter un titre plutôt que tout regénérer.
