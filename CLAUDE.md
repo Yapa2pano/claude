@@ -31,8 +31,9 @@ puis commit + push. Ne jamais attendre qu'il le redemande.
 9. **Équation reine : Résultat = Nombre d'opportunités × Conversion (× valeur de la conversion).**
    - C'est une multiplication : **travailler en priorité le facteur le plus faible** (1×9 = 9 < 5×5 = 25).
      0 opportunité × conversion parfaite = 0 ; beaucoup d'opportunités × 0 conversion = 0.
-   - E-commerce : trafic / nombre de créas / segments visés (opportunités) × taux de conversion de la page
-     × panier moyen (valeur : packs, upsell, cadeau). Toujours identifier lequel des trois est le plus faible.
+   - E-commerce : opportunités = **UNIQUEMENT les gens de la cible qui peuvent potentiellement acheter**
+     (pas le trafic en général, pas ceux qui n'achèteront jamais) × taux de conversion × panier moyen.
+     Toujours identifier lequel des facteurs est le plus faible.
    - Dans une page : **chaque unité d'attention est une opportunité**. La noter : 7/10 = convertit un peu
      (un débutant ne voit pas l'erreur) ; 10/10 = convertit beaucoup ; **11/10 = endroit propice à convertir
      énormément** (la phrase, l'image ou le GIF qui scelle le deal). Repérer ces endroits clés (1re image,
@@ -42,6 +43,18 @@ puis commit + push. Ne jamais attendre qu'il le redemande.
    - Chercher aussi à **créer de nouvelles opportunités** (nouveaux segments, nouveaux moments d'achat,
      nouvelles raisons d'acheter), pas seulement à mieux convertir celles qu'on a.
    - L'objectif est l'état d'achat naturel : désir + confiance > prix.
+10. **Éléments « carry »** (comme Givrali / Cizayox en solo queue sur Pokémon Unite, qui font tout le travail
+    en 1 contre 5) : un titre qui fait basculer, une accroche, une phrase où le prospect se dit « c'est
+    exactement moi », une image ou un GIF « show, don't tell » à forte émotion. Ils déplacent énormément
+    le prospect vers l'achat en très peu d'unités d'attention (compressé = efficace).
+    - Les **chercher activement** à chaque fois ; ne jamais s'en priver (se priver d'un carry = perdre plus
+      souvent, même si le reste est excellent).
+    - Les placer **au début** (hook de créa, titre de page, 1re image, bullets du haut) : c'est là qu'il y a
+      le plus de monde. Une image carry enterrée en bas de page = coût d'opportunité.
+    - Si le carry a besoin d'un contexte, mettre juste avant une **courte étape d'éducation** qui rend le
+      prospect réceptif.
+    - Coût d'opportunité / manque à gagner : là où un 11/10 carry est possible, **un 9/10 est une erreur**
+      (un débutant ne la voit pas). Toujours se demander : « quel est l'élément carry ici ? »
 
 ## Contexte boutique
 - **Langue** :
